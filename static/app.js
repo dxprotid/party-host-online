@@ -34,13 +34,24 @@ function eventSound(card){if(card?.bear)return'bear';const t=card?.title||'';
 function playSound(kind){if(!soundEnabled||fxVolume<=0)return;
  const file=AUDIO_FILES[kind]||'surprise'; const url=(window.PARTY_BASE||'')+'/static/sounds/'+file+'.wav';
  try{if(!audioCache[file]){audioCache[file]=new Audio(url);audioCache[file].preload='auto'}
- const instance=audioCache[file].cloneNode();instance.volume=Math.min(1,Math.max(0,fxVolume));instance.play().catch(()=>{});
+ const instance=audioCache[file].cloneNode();instance.volume=Math.min(.9,Math.max(0,fxVolume*.80));instance.play().catch(()=>{});
  }catch(e){partySound(kind)}
 }
-function cardFx(kind){if(!kind||kind==='skip')return;let el=$('effects');el.replaceChildren();el.className='';if(kind==='bear'){
-  el.innerHTML='<div class="bearScene"><img class="bearArt" src="'+(window.PARTY_BASE||'')+'/static/bear-party.svg'+'" alt="Весёлый мультяшный медведь"><div class="bearSpeech">'+(state?.settings?.language==='en'?'BEAR ATTACK!':'МЕДВЕДЬ ПРИШЁЛ!')+'</div></div>';
- }else{let label=document.createElement('div');label.className='effectSymbol';label.textContent=({yes:'🥂',no:'✨',surprise:'🎁',police:'🚨',duel:'⚔️',traitor:'🐀',start:'🎉'})[kind]||'✨';el.append(label)}
- void el.offsetWidth;el.className='play '+(kind==='bear'?'bearEffect':'');playSound(kind)}
+// No full-screen gift overlay: a compact toast keeps questions readable.
+let effectTimer=null;
+function cardFx(kind){
+ if(!kind||kind==='skip')return;
+ const el=$('effects');
+ el.replaceChildren();el.className='';
+ if(effectTimer)clearTimeout(effectTimer);
+ // The bear is already animated inside the event card; avoid covering player controls.
+ if(kind==='bear'||kind==='surprise'){playSound(kind);return;}
+ const badge=document.createElement('span');badge.className='effectToast';
+ badge.textContent=({yes:'🥂',no:'✨',police:'🚨',duel:'⚔️',traitor:'🐀',start:'🎉'})[kind]||'✨';
+ el.append(badge);void el.offsetWidth;el.className='play compactEffect';
+ effectTimer=setTimeout(()=>{el.className='';el.replaceChildren()},950);
+ playSound(kind);
+}
 // Mobile browsers unlock sound only after an explicit tap.
 for(let ev of ['touchstart','pointerdown'])document.addEventListener(ev,()=>{if(!audioUnlocked){audioUnlocked=true;audioEngine()}},{once:true,passive:true});
 function topicRender(topics){let root=$('topics');root.replaceChildren();Object.entries(topics||{}).filter(([t])=>t!=='Особо жёсткий 18+').forEach(([name,n])=>{let label=document.createElement('label');label.className='topicItem';let ch=document.createElement('input');ch.type='checkbox';ch.value=name;ch.checked=state.settings.topics.includes(name);ch.addEventListener('change',saveSettings);let s=document.createElement('span');s.textContent=name+' ';let small=document.createElement('small');small.textContent='('+n+')';s.append(small);label.append(ch,s);root.append(label)});translateUI()}
@@ -52,7 +63,7 @@ function showPlayers(list){$('players').replaceChildren();for(let p of list){let
 function render(s){let prior=state;state=s;if(!s||!s.phase)return;
  if(admin){$('adminSummary').textContent=(language==='en'?'Players: ':'Игроков: ')+s.players.map(p=>p.name).join(', ')+' · '+s.players.length+'/4';$('hostOnly').classList.toggle('hidden',s.phase!=='lobby');$('adminLive').classList.toggle('hidden',s.phase!=='playing');$('adminReset').classList.toggle('hidden',s.phase!=='ended');if(s.phase==='playing'){$('adminCurrent').textContent=s.current?.text||'';}if(hostTab==='manage'){view('adminPanel');if(s.phase==='lobby'){$('joinLink').textContent=s.address;$('joinLink').href=s.address;let qr=$('joinQr');if(qr){let src='/qr.svg?ip='+encodeURIComponent(s.address);if(qr.getAttribute('src')!==src)qr.setAttribute('src',src)}$('start').disabled=s.players.length<2;const hash=JSON.stringify(s.settings);if(settingsHash!==hash){settingsHash=hash;applySettings(s.settings);topicRender(s.topics)}}return;}}
  if(prior&&prior.phase==='lobby'&&s.phase==='playing')playSound('start');
- if(s.effect&&s.effect.revision!==lastEffect){lastEffect=s.effect.revision; if(prior&&prior.phase==='playing')cardFx(s.effect.kind)}
+ if(s.effect&&s.effect.revision!==lastEffect){lastEffect=s.effect.revision;if(prior&&prior.phase==='playing'&&!s.current?.event)cardFx(s.effect.kind)}
  if(s.phase==='playing' && s.current?.event){
   let key=String(s.index)+'|'+String(s.current.title);
   if(key!==lastEventKey){lastEventKey=key;if(prior)cardFx(eventSound(s.current))}

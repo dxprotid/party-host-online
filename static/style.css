@@ -23,3 +23,58 @@ footer{text-align:center;font-size:11px;color:#ead0fa;padding:20px 24px 35px}bod
 
 /* Party 7.0 — language & event sound settings */
 .prefsToggle{flex:none;border:2px solid #eea8ff;background:#5f118a;color:#fff;padding:8px 11px;font-size:16px;box-shadow:0 3px #210031;border-radius:15px}.prefsPanel{position:relative;z-index:40;width:min(600px,calc(100% - 20px));margin:0 auto 12px;border:3px solid #e5a6ff;border-radius:20px;background:#430a6a;padding:15px 20px;box-shadow:0 7px 0 #190027}.prefsPanel label{margin:7px 0}.prefsPanel .prefTitle{color:#c7ff00;font-weight:950;font-size:17px}.prefsPanel input[type=range]{display:block;width:100%;margin:7px 0}.prefsPanel .secondary{width:100%}.prefsPanel .fine{margin:8px 0}.status{max-width:95px;overflow:hidden;text-overflow:ellipsis}@media(max-width:430px){.brand-title{font-size:16px}.brand-tag{display:none}.prefsToggle{padding:6px;font-size:14px}}
+
+/* Party Host 7.0.2 — compact accessible adaptive layout */
+html{min-width:280px}body{min-width:280px}main,.panel,.config,.split,.card{min-width:0}
+#effects{pointer-events:none;place-items:end center;padding-bottom:max(18px,env(safe-area-inset-bottom));background:transparent}
+#effects.play.compactEffect{animation:partyToastFade .9s ease-in-out both}
+.effectToast{display:grid;place-items:center;min-width:66px;min-height:60px;padding:8px 12px;border:2px solid #fff;border-radius:22px;background:#4b0879e8;font-size:34px;box-shadow:0 4px 16px #21003499;animation:partyToastIn .3s ease-out both}
+@keyframes partyToastFade{0%{opacity:0}20%,70%{opacity:1}100%{opacity:0}}
+@keyframes partyToastIn{from{transform:translateY(25px) scale(.75)}to{transform:translateY(0) scale(1)}}
+@media(hover:none),(pointer:coarse){button{min-height:44px} .panel a,.panel button{touch-action:manipulation}}
+@media(max-width:640px){
+ header{padding:calc(7px + env(safe-area-inset-top,0px)) 10px 5px;gap:5px}
+ main{margin:4px auto 12px;padding:0 8px}
+ .hostTabs{top:0;padding:5px 0 7px;margin-bottom:7px}
+ .hostTabs button{min-height:42px}
+ .panel{padding:12px 10px;border-radius:17px;border-width:2px;box-shadow:0 3px 0 #1b002f}
+ .panel::before{display:none}
+ .between{gap:5px}.pill{padding:5px 8px;font-size:11px}
+ .progress{margin:8px 0;height:8px}
+ .reader{margin:8px auto 9px;padding:8px 9px;border-radius:15px}
+ .readerCaption{font-size:13px;letter-spacing:.03em}
+ .readerName{font-size:clamp(25px,8vw,44px);line-height:1.04}
+ .card{padding:45px 12px 23px;min-height:190px;border-width:3px;border-radius:19px;box-shadow:0 0 0 2px #c881f7,4px 5px 0 #28003d}
+ .cardTape{top:8px;padding:4px 10px;font-size:13px}
+ .cardTitle{font-size:11px;margin:7px 0 8px}
+ .question{font-size:clamp(20px,5.65vw,31px);line-height:1.18}
+ .cardDoodle{font-size:10px}
+ .actions{gap:7px;margin:13px 0 10px}
+ .yes,.no{min-height:62px;font-size:clamp(16px,5vw,21px);border-width:2px;border-radius:17px;box-shadow:0 3px 0 #210033}
+ .actions .secondary{min-height:44px}
+ .fine{font-size:11px} .hint{font-size:12px;line-height:1.2;margin:8px 0}
+ #gamePanel .fine{margin-top:6px}
+ .bearCard .card{min-height:310px;padding-top:160px}
+ .bearCard .card::before{height:157px;background-size:auto 145px}
+ .bearCard .cardTitle{font-size:clamp(20px,5vw,29px)}
+ .bearCard .question{font-size:clamp(17px,4.9vw,25px)}
+ .split{gap:12px;margin-top:10px}
+ .topics{grid-template-columns:repeat(auto-fit,minmax(min(135px,100%),1fr));max-height:40vh}
+}
+@media(max-width:640px) and (max-height:730px){
+ header{padding-top:4px}.brand-title{font-size:16px}.brand-tag{display:none}
+ .hostTabs{margin-bottom:3px}.hostTabs button{min-height:39px}
+ .reader{margin:5px auto 7px;padding:6px}.readerCaption{font-size:12px}
+ .readerName{font-size:clamp(23px,7vw,36px)}
+ .progress{margin:5px 0}.card{min-height:155px;padding-top:39px;padding-bottom:14px}
+ .question{font-size:clamp(19px,5.2vw,27px)}
+ .actions{margin:9px 0 7px}.yes,.no{min-height:54px}
+ .bearCard .card{min-height:270px;padding-top:132px}.bearCard .card::before{height:126px;background-size:auto 118px}
+}
+@media(max-width:640px) and (min-height:850px){
+ #gamePanel:not(.hidden){display:flex;flex-direction:column;min-height:calc(100dvh - 136px)}
+ #gamePanel .card{flex:1;min-height:250px}
+ #gamePanel .actions{margin-top:auto;padding-top:12px}
+}
+@media(max-width:380px){header{gap:4px}.status{max-width:70px}.readerName{font-size:clamp(23px,7.5vw,32px)}.pill{font-size:10px}.cardTape{font-size:11px}.question{font-size:clamp(18px,5.6vw,23px)}}
+@media(prefers-reduced-motion:reduce){.effectToast{animation:none!important}}
