@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: party-edition-online
+    runtime: python
+    rootDir: online-server
+    buildCommand: "echo Ready"
+    startCommand: python online_server.py
+    envVars:
+      - key: PARTY_PUBLIC_URL
+        sync: false
