@@ -13,16 +13,18 @@ DATA = json.loads((ROOT / 'questions.json').read_text(encoding='utf-8'))
 FEMALE_QUESTIONS = json.loads((ROOT / 'questions_female.json').read_text(encoding='utf-8'))
 QUESTIONS = DATA['questions']; EVENTS = DATA['events']
 CARDS = json.loads((ROOT / 'questions_v67.json').read_text(encoding='utf-8'))
+EN_CARDS = json.loads((ROOT / 'questions_en.json').read_text(encoding='utf-8'))
+EN_EVENTS = json.loads((ROOT / 'events_en.json').read_text(encoding='utf-8'))
 TOPICS = list(CARDS)
 CARD_IDS = {topic: {f'{topic}:{i}': card for i, card in enumerate(cards)} for topic, cards in CARDS.items()}
-BANK_VERSION = 67
+BANK_VERSION = 70
 EXTREME = 'Особо жёсткий 18+'
 PORT = int(os.environ.get('PARTY_PORT', '8765'))
 ADMIN = os.environ.get('PARTY_ADMIN_KEY') or secrets.token_urlsafe(24)
 LOCK = threading.RLock()
 
 def blank():
-    return dict(revision=0, phase='lobby', players=[], settings={'mode':'quick','total':20,'extreme':False,'topics':[t for t in TOPICS if t != EXTREME], 'events':True,'rate':0.16,'party_level':3}, current=None, index=0, deck=[], bank_version=BANK_VERSION, events_deck=[], last=None, reader_override=None, last_event=False, effect=None)
+    return dict(revision=0, phase='lobby', players=[], settings={'mode':'quick','total':20,'extreme':False,'topics':[t for t in TOPICS if t != EXTREME], 'events':True,'rate':0.16,'party_level':3,'language':'ru'}, current=None, index=0, deck=[], bank_version=BANK_VERSION, events_deck=[], last=None, reader_override=None, last_event=False, effect=None)
 STATE_FILE = Path(os.environ.get('PARTY_STATE_FILE', str(ROOT / '.party_state.json')))
 
 def restore():
@@ -79,13 +81,16 @@ def draw():
         # A rare all-player interruption; probability increases with party level.
         bear_chance={1:0.06,2:0.10,3:0.16,4:0.24,5:0.34}[level]
         if random.random()<bear_chance:
-            g['current']={'event':True,'bear':True,'topic':'🐻 ВНЕЗАПНЫЙ ИВЕНТ',
-                'text':'МЕДВЕДЬ ПРИШЁЛ! Все быстро говорят «Я в домике!» или показывают крышу над головой. Последний выполняет смешной штраф (например, изображает медведя) либо, если сам захочет, делает один небольшой глоток. Никаких залпов и обязательных штрафов.',
-                'title':'🐻 МЕДВЕДЬ ПРИШЁЛ!','event_kind':'bear','reader':players[reader]['id'],'revealed':True}
+            g['current']={'event':True,'bear':True,'topic':'🐻 SUDDEN EVENT' if g['settings'].get('language')=='en' else '🐻 ВНЕЗАПНЫЙ ИВЕНТ',
+                'text':'BEAR ATTACK! Quickly shout “I am safe!” or make a roof with your hands. The last person does a silly bear impression. Optional small sip, never required.' if g['settings'].get('language')=='en' else 'МЕДВЕДЬ ПРИШЁЛ! Все быстро говорят «Я в домике!» или показывают крышу над головой. Последний выполняет смешной штраф (например, изображает медведя) либо, если сам захочет, делает один небольшой глоток. Никаких залпов и обязательных штрафов.',
+                'title':'🐻 BEAR ATTACK!' if g['settings'].get('language')=='en' else '🐻 МЕДВЕДЬ ПРИШЁЛ!','event_kind':'bear','reader':players[reader]['id'],'revealed':True}
             g['last_event']=True;g['effect']=None;touch();return
         if not g['events_deck']: g['events_deck']=random.sample(EVENTS,len(EVENTS))
         title,body=g['events_deck'].pop()
-        g['current']={'event':True,'topic':'🎁 Кот в мешке','text':body,'title':title,'event_kind':'surprise','reader':players[reader]['id'],'revealed':True}
+        if g['settings'].get('language')=='en':
+            old = next((i for i, ev in enumerate(EVENTS) if ev[0]==title), None)
+            if old is not None: title,body=EN_EVENTS[old]
+        g['current']={'event':True,'topic':'🎁 Mystery Event' if g['settings'].get('language')=='en' else '🎁 Кот в мешке','text':body,'title':title,'event_kind':'surprise','reader':players[reader]['id'],'revealed':True}
     else:
         if not g['deck']:
             allowed=[EXTREME] if g['settings']['extreme'] else g['settings']['topics']
@@ -93,8 +98,11 @@ def draw():
             # Shuffle a complete unique deck: no repeats until every selected plot is exhausted.
             independent=[]
             seen_text=set()
+            bank = EN_CARDS if g['settings'].get('language')=='en' else CARDS
+            if bank is EN_CARDS:
+                allowed = [t for t in allowed if t in EN_CARDS] or list(EN_CARDS)
             for topic in allowed:
-                for idx, card in enumerate(CARDS[topic]):
+                for idx, card in enumerate(bank[topic]):
                     if card.get('variant') != 0:
                         continue
                     normalized=(' '.join(card['m'].split()).casefold(), ' '.join(card['f'].split()).casefold())
@@ -108,11 +116,12 @@ def draw():
                 g['deck'][-1],g['deck'][-2]=g['deck'][-2],g['deck'][-1]
         key=g['deck'].pop()
         topic,idx=key.rsplit(':',1)
-        card=CARDS[topic][int(idx)]
+        card=(EN_CARDS if g['settings'].get('language')=='en' else CARDS)[topic][int(idx)]
         g['last']=key
-        g['current']={'event':False,'topic':topic,'text':'Я никогда не '+card['m'],
-                      'female_text':'Я никогда не '+card['f'],
-                      'title':'Я НИКОГДА НЕ…','reader':players[reader]['id'],'revealed':True}
+        prefix='I have never ' if g['settings'].get('language')=='en' else 'Я никогда не '
+        g['current']={'event':False,'topic':topic,'text':prefix+card['m'],
+                      'female_text':prefix+card['f'],
+                      'title':'NEVER HAVE I EVER…' if g['settings'].get('language')=='en' else 'Я НИКОГДА НЕ…','reader':players[reader]['id'],'revealed':True}
     g['last_event']=event;g['effect']=None;touch()
 
 def snapshot(token, admin):
@@ -166,7 +175,8 @@ def action(data, token, admin):
             require(extreme or bool(topics),'Выберите хотя бы одну тему')
             rate=opt.get('rate',0.16);require(type(rate) in (int,float) and 0<=rate<=0.5,'Частота событий от 0 до 50%')
             level=opt.get('party_level',3);require(type(level)==int and 1<=level<=5,'Уровень вечеринки: 1–5')
-            g['settings']={'mode':mode,'total':total,'extreme':extreme,'topics':topics,'events':opt.get('events') is True,'rate':rate,'party_level':level}
+            language=opt.get('language','ru');require(language in ('ru','en'),'Unsupported language')
+            g['settings']={'mode':mode,'total':total,'extreme':extreme,'topics':topics,'events':opt.get('events') is True,'rate':rate,'party_level':level,'language':language}
             touch();return snapshot(token,admin)
         if act=='kick':
             require(admin and g['phase']=='lobby')
@@ -181,8 +191,8 @@ def action(data, token, admin):
             require(admin or (mine is not None and mine['id']==g['current']['reader']),'Переключить может только читающий.')
             card=g['current']
             if card['event']:
-                if 'Смена власти' in card['title']:g['reader_override']=(g['index']+2)%len(g['players'])
-                if 'Реверс' in card['title']:g['reader_override']=(g['index']+len(g['players'])-1)%len(g['players'])
+                if ('Смена власти' in card['title'] or 'Power Shift' in card['title']):g['reader_override']=(g['index']+2)%len(g['players'])
+                if ('Реверс' in card['title'] or 'Reverse' in card['title']):g['reader_override']=(g['index']+len(g['players'])-1)%len(g['players'])
             g['index']+=1;draw()
             # effect attached to NEXT state, which all clients can animate once
             g['effect']={'kind':data.get('kind') if data.get('kind') in ('yes','no') else 'skip','revision':g['revision']}
@@ -211,6 +221,10 @@ class Handler(BaseHTTPRequestHandler):
                 self.reply_headers(403,'text/plain; charset=utf-8');self.wfile.write(b'Forbidden');return
             content=(ROOT/'static/index.html').read_bytes()
             self.reply_headers(200,'text/html; charset=utf-8');self.wfile.write(content);return
+        if path.startswith('/static/sounds/') and path.rsplit('/',1)[-1] in {'glasses.wav','no.wav','bear.wav','surprise.wav','police.wav','duel.wav','traitor.wav','start.wav','page.wav','click.wav'}:
+            self.reply_headers(200,'audio/wav');self.wfile.write((ROOT/path.lstrip('/')).read_bytes());return
+        if path=='/static/bear-party.svg':
+            self.reply_headers(200,'image/svg+xml');self.wfile.write((ROOT/'static/bear-party.svg').read_bytes());return
         if path=='/static/app.js' or path=='/static/style.css':
             typ='application/javascript; charset=utf-8' if path.endswith('.js') else 'text/css; charset=utf-8'
             self.reply_headers(200,typ);self.wfile.write((ROOT/path.lstrip('/')).read_bytes());return

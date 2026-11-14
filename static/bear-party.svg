@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 420" role="img" aria-label="Весёлый медведь на вечеринке">
+<defs><filter id="s"><feDropShadow dx="5" dy="8" stdDeviation="2" flood-color="#3d0051" flood-opacity=".7"/></filter></defs>
+<g filter="url(#s)" stroke="#3b1740" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+<path d="M46 82l40-24M410 87l46-24M59 322l-31 40M455 304l35 27" stroke="#ffff00" stroke-width="14"/>
+<path d="M100 284Q45 250 31 195Q25 174 44 166Q67 160 75 193L95 224Q87 187 108 178Q133 174 131 211L142 241" fill="#996047"/>
+<path d="M396 272Q453 235 469 193Q475 171 458 165Q433 157 428 195L414 222Q422 188 399 178Q374 175 376 211L365 244" fill="#996047"/>
+<ellipse cx="251" cy="319" rx="139" ry="92" fill="#9b5b35"/>
+<ellipse cx="138" cy="137" rx="49" ry="47" fill="#995431"/><ellipse cx="365" cy="137" rx="49" ry="47" fill="#995431"/>
+<ellipse cx="138" cy="137" rx="24" ry="25" fill="#ec9f7f"/><ellipse cx="365" cy="137" rx="24" ry="25" fill="#ec9f7f"/>
+<ellipse cx="252" cy="196" rx="151" ry="137" fill="#ad7040"/>
+<path d="M179 72L231 2L309 82Z" fill="#e62ccd"/><path d="M231 2L264 81L309 82Z" fill="#fff05a"/>
+<circle cx="231" cy="8" r="12" fill="#bfff00"/>
+<path d="M147 175Q176 124 232 165L213 202Q176 213 146 184Z" fill="#16102e" stroke="none"/>
+<path d="M271 166Q328 130 362 164L354 188Q316 214 283 199Z" fill="#16102e" stroke="none"/>
+<path d="M230 178h45" stroke="#16102e" stroke-width="14"/>
+<ellipse cx="252" cy="240" rx="69" ry="60" fill="#e4ab80"/>
+<path d="M229 229Q252 208 276 229Q272 256 251 257Q233 258 229 229Z" fill="#3a2034"/>
+<path d="M203 270Q251 333 305 267Q288 315 251 319Q224 312 203 270" fill="#4c103d"/>
+<path d="M227 290Q250 275 273 290" fill="none" stroke="#ff6186" stroke-width="9"/>
+<circle cx="147" cy="279" r="13" fill="#ff83b2"/><circle cx="110" cy="265" r="10" fill="#ff83b2"/>
+</g><g font-size="44" font-weight="900"><text x="42" y="113" fill="#fbef00">✦</text><text x="398" y="120" fill="#00fbfb">✦</text><text x="376" y="329" fill="#e920e4">★</text></g>
+</svg>

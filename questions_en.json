@@ -1,0 +1,1978 @@
+{
+  "Угар и кринж": [
+    {
+      "m": "sent a message to the wrong group chat.",
+      "f": "sent a message to the wrong group chat.",
+      "variant": 0
+    },
+    {
+      "m": "laughed at a joke I did not understand.",
+      "f": "laughed at a joke I did not understand.",
+      "variant": 0
+    },
+    {
+      "m": "waved back at a stranger who was waving at someone else.",
+      "f": "waved back at a stranger who was waving at someone else.",
+      "variant": 0
+    },
+    {
+      "m": "pretended I knew the words to a song.",
+      "f": "pretended I knew the words to a song.",
+      "variant": 0
+    },
+    {
+      "m": "walked into a glass door.",
+      "f": "walked into a glass door.",
+      "variant": 0
+    },
+    {
+      "m": "tried to look cool and immediately tripped.",
+      "f": "tried to look cool and immediately tripped.",
+      "variant": 0
+    },
+    {
+      "m": "accidentally liked a very old photo.",
+      "f": "accidentally liked a very old photo.",
+      "variant": 0
+    },
+    {
+      "m": "forgot why I walked into a room.",
+      "f": "forgot why I walked into a room.",
+      "variant": 0
+    },
+    {
+      "m": "spilled food on myself during a first date.",
+      "f": "spilled food on myself during a first date.",
+      "variant": 0
+    },
+    {
+      "m": "pretended not to hear someone calling my name.",
+      "f": "pretended not to hear someone calling my name.",
+      "variant": 0
+    },
+    {
+      "m": "practiced a conversation in the mirror.",
+      "f": "practiced a conversation in the mirror.",
+      "variant": 0
+    },
+    {
+      "m": "fallen asleep during a movie at the cinema.",
+      "f": "fallen asleep during a movie at the cinema.",
+      "variant": 0
+    }
+  ],
+  "Вечеринки и алкоголь": [
+    {
+      "m": "ended up at a party I was not invited to.",
+      "f": "ended up at a party I was not invited to.",
+      "variant": 0
+    },
+    {
+      "m": "woken up wearing someone else's jacket.",
+      "f": "woken up wearing someone else's jacket.",
+      "variant": 0
+    },
+    {
+      "m": "danced on a table.",
+      "f": "danced on a table.",
+      "variant": 0
+    },
+    {
+      "m": "started a dance-off with a stranger.",
+      "f": "started a dance-off with a stranger.",
+      "variant": 0
+    },
+    {
+      "m": "forgot where I left my drink.",
+      "f": "forgot where I left my drink.",
+      "variant": 0
+    },
+    {
+      "m": "called someone after midnight and regretted it.",
+      "f": "called someone after midnight and regretted it.",
+      "variant": 0
+    },
+    {
+      "m": "sung karaoke after promising I would not.",
+      "f": "sung karaoke after promising I would not.",
+      "variant": 0
+    },
+    {
+      "m": "lost my voice at a party.",
+      "f": "lost my voice at a party.",
+      "variant": 0
+    },
+    {
+      "m": "left a party without saying goodbye.",
+      "f": "left a party without saying goodbye.",
+      "variant": 0
+    },
+    {
+      "m": "been the last person on the dance floor.",
+      "f": "been the last person on the dance floor.",
+      "variant": 0
+    },
+    {
+      "m": "shown up to a party in the wrong outfit.",
+      "f": "shown up to a party in the wrong outfit.",
+      "variant": 0
+    },
+    {
+      "m": "claimed I was going home and stayed for hours.",
+      "f": "claimed I was going home and stayed for hours.",
+      "variant": 0
+    }
+  ],
+  "Флирт и свидания": [
+    {
+      "m": "had a crush on someone in this room.",
+      "f": "had a crush on someone in this room.",
+      "variant": 0
+    },
+    {
+      "m": "gone on a date just for the story.",
+      "f": "gone on a date just for the story.",
+      "variant": 0
+    },
+    {
+      "m": "practiced a pickup line before using it.",
+      "f": "practiced a pickup line before using it.",
+      "variant": 0
+    },
+    {
+      "m": "had two dates in one day.",
+      "f": "had two dates in one day.",
+      "variant": 0
+    },
+    {
+      "m": "pretended to like a hobby to impress a date.",
+      "f": "pretended to like a hobby to impress a date.",
+      "variant": 0
+    },
+    {
+      "m": "kissed someone before learning their name.",
+      "f": "kissed someone before learning their name.",
+      "variant": 0
+    },
+    {
+      "m": "accidentally called a date by the wrong name.",
+      "f": "accidentally called a date by the wrong name.",
+      "variant": 0
+    },
+    {
+      "m": "sent a flirty message to the wrong person.",
+      "f": "sent a flirty message to the wrong person.",
+      "variant": 0
+    },
+    {
+      "m": "fallen for someone I met on vacation.",
+      "f": "fallen for someone I met on vacation.",
+      "variant": 0
+    },
+    {
+      "m": "stalked a crush's social media before meeting them.",
+      "f": "stalked a crush's social media before meeting them.",
+      "variant": 0
+    },
+    {
+      "m": "gone on a blind date.",
+      "f": "gone on a blind date.",
+      "variant": 0
+    },
+    {
+      "m": "invented an excuse to leave a boring date.",
+      "f": "invented an excuse to leave a boring date.",
+      "variant": 0
+    }
+  ],
+  "18+ без цензуры": [
+    {
+      "m": "had a one-night stand.",
+      "f": "had a one-night stand.",
+      "variant": 0
+    },
+    {
+      "m": "lied about how many people I have slept with.",
+      "f": "lied about how many people I have slept with.",
+      "variant": 0
+    },
+    {
+      "m": "sent an intimate message and regretted it.",
+      "f": "sent an intimate message and regretted it.",
+      "variant": 0
+    },
+    {
+      "m": "been attracted to someone much older than me.",
+      "f": "been attracted to someone much older than me.",
+      "variant": 0
+    },
+    {
+      "m": "kissed two different people at one party.",
+      "f": "kissed two different people at one party.",
+      "variant": 0
+    },
+    {
+      "m": "had a secret friends-with-benefits arrangement.",
+      "f": "had a secret friends-with-benefits arrangement.",
+      "variant": 0
+    },
+    {
+      "m": "kept a romantic secret from my friends.",
+      "f": "kept a romantic secret from my friends.",
+      "variant": 0
+    },
+    {
+      "m": "had a crush on a friend's ex.",
+      "f": "had a crush on a friend's ex.",
+      "variant": 0
+    },
+    {
+      "m": "pretended not to recognize a former hookup.",
+      "f": "pretended not to recognize a former hookup.",
+      "variant": 0
+    },
+    {
+      "m": "flirted with someone just to make another person jealous.",
+      "f": "flirted with someone just to make another person jealous.",
+      "variant": 0
+    },
+    {
+      "m": "had an awkward conversation about boundaries.",
+      "f": "had an awkward conversation about boundaries.",
+      "variant": 0
+    },
+    {
+      "m": "turned down a hookup at the last minute.",
+      "f": "turned down a hookup at the last minute.",
+      "variant": 0
+    }
+  ],
+  "Секреты и компромат": [
+    {
+      "m": "kept a secret for more than five years.",
+      "f": "kept a secret for more than five years.",
+      "variant": 0
+    },
+    {
+      "m": "accidentally revealed a surprise party.",
+      "f": "accidentally revealed a surprise party.",
+      "variant": 0
+    },
+    {
+      "m": "read a message over someone's shoulder.",
+      "f": "read a message over someone's shoulder.",
+      "variant": 0
+    },
+    {
+      "m": "pretended to be surprised by news I already knew.",
+      "f": "pretended to be surprised by news I already knew.",
+      "variant": 0
+    },
+    {
+      "m": "deleted a message to hide my embarrassment.",
+      "f": "deleted a message to hide my embarrassment.",
+      "variant": 0
+    },
+    {
+      "m": "kept a screenshot of a ridiculous conversation.",
+      "f": "kept a screenshot of a ridiculous conversation.",
+      "variant": 0
+    },
+    {
+      "m": "made up a harmless excuse to avoid a friend.",
+      "f": "made up a harmless excuse to avoid a friend.",
+      "variant": 0
+    },
+    {
+      "m": "learned a secret by accident.",
+      "f": "learned a secret by accident.",
+      "variant": 0
+    },
+    {
+      "m": "heard gossip about myself.",
+      "f": "heard gossip about myself.",
+      "variant": 0
+    },
+    {
+      "m": "pretended to forget an embarrassing story.",
+      "f": "pretended to forget an embarrassing story.",
+      "variant": 0
+    },
+    {
+      "m": "kept a diary with a password.",
+      "f": "kept a diary with a password.",
+      "variant": 0
+    },
+    {
+      "m": "lied about why I was late.",
+      "f": "lied about why I was late.",
+      "variant": 0
+    }
+  ],
+  "Отношения и бывшие": [
+    {
+      "m": "looked up an ex out of curiosity.",
+      "f": "looked up an ex out of curiosity.",
+      "variant": 0
+    },
+    {
+      "m": "reconnected with someone I once dated.",
+      "f": "reconnected with someone I once dated.",
+      "variant": 0
+    },
+    {
+      "m": "kept a gift from an ex.",
+      "f": "kept a gift from an ex.",
+      "variant": 0
+    },
+    {
+      "m": "dated someone my friends disliked.",
+      "f": "dated someone my friends disliked.",
+      "variant": 0
+    },
+    {
+      "m": "had a dream about an ex.",
+      "f": "had a dream about an ex.",
+      "variant": 0
+    },
+    {
+      "m": "sent an apology long after a breakup.",
+      "f": "sent an apology long after a breakup.",
+      "variant": 0
+    },
+    {
+      "m": "pretended I was over someone when I was not.",
+      "f": "pretended I was over someone when I was not.",
+      "variant": 0
+    },
+    {
+      "m": "compared a new date to an ex.",
+      "f": "compared a new date to an ex.",
+      "variant": 0
+    },
+    {
+      "m": "deleted photos after a breakup.",
+      "f": "deleted photos after a breakup.",
+      "variant": 0
+    },
+    {
+      "m": "stayed friends with an ex.",
+      "f": "stayed friends with an ex.",
+      "variant": 0
+    },
+    {
+      "m": "regretted ending a relationship.",
+      "f": "regretted ending a relationship.",
+      "variant": 0
+    },
+    {
+      "m": "ghosted someone rather than have a hard conversation.",
+      "f": "ghosted someone rather than have a hard conversation.",
+      "variant": 0
+    }
+  ],
+  "Безумные поступки": [
+    {
+      "m": "jumped into water fully dressed.",
+      "f": "jumped into water fully dressed.",
+      "variant": 0
+    },
+    {
+      "m": "booked a trip on a whim.",
+      "f": "booked a trip on a whim.",
+      "variant": 0
+    },
+    {
+      "m": "got a tattoo without planning it.",
+      "f": "got a tattoo without planning it.",
+      "variant": 0
+    },
+    {
+      "m": "tried an extreme sport despite being scared.",
+      "f": "tried an extreme sport despite being scared.",
+      "variant": 0
+    },
+    {
+      "m": "climbed onto a roof for the view.",
+      "f": "climbed onto a roof for the view.",
+      "variant": 0
+    },
+    {
+      "m": "slept outdoors unexpectedly.",
+      "f": "slept outdoors unexpectedly.",
+      "variant": 0
+    },
+    {
+      "m": "accepted a ridiculous dare.",
+      "f": "accepted a ridiculous dare.",
+      "variant": 0
+    },
+    {
+      "m": "got on a train without knowing the destination.",
+      "f": "got on a train without knowing the destination.",
+      "variant": 0
+    },
+    {
+      "m": "went swimming at night.",
+      "f": "went swimming at night.",
+      "variant": 0
+    },
+    {
+      "m": "traveled without a hotel reservation.",
+      "f": "traveled without a hotel reservation.",
+      "variant": 0
+    },
+    {
+      "m": "spent a night exploring a new city.",
+      "f": "spent a night exploring a new city.",
+      "variant": 0
+    },
+    {
+      "m": "tried to impress someone with a risky stunt.",
+      "f": "tried to impress someone with a risky stunt.",
+      "variant": 0
+    }
+  ],
+  "Друзья и компания": [
+    {
+      "m": "borrowed clothes from a friend without asking.",
+      "f": "borrowed clothes from a friend without asking.",
+      "variant": 0
+    },
+    {
+      "m": "forgot a close friend's birthday.",
+      "f": "forgot a close friend's birthday.",
+      "variant": 0
+    },
+    {
+      "m": "been the designated photographer at every party.",
+      "f": "been the designated photographer at every party.",
+      "variant": 0
+    },
+    {
+      "m": "helped a friend write a breakup message.",
+      "f": "helped a friend write a breakup message.",
+      "variant": 0
+    },
+    {
+      "m": "pretended to love a friend's terrible cooking.",
+      "f": "pretended to love a friend's terrible cooking.",
+      "variant": 0
+    },
+    {
+      "m": "gone on a disastrous group trip.",
+      "f": "gone on a disastrous group trip.",
+      "variant": 0
+    },
+    {
+      "m": "kept an inside joke alive for years.",
+      "f": "kept an inside joke alive for years.",
+      "variant": 0
+    },
+    {
+      "m": "been the unofficial therapist of the group.",
+      "f": "been the unofficial therapist of the group.",
+      "variant": 0
+    },
+    {
+      "m": "argued with friends over a board game.",
+      "f": "argued with friends over a board game.",
+      "variant": 0
+    },
+    {
+      "m": "laughed so hard with friends that I cried.",
+      "f": "laughed so hard with friends that I cried.",
+      "variant": 0
+    },
+    {
+      "m": "made an embarrassing group-chat typo.",
+      "f": "made an embarrassing group-chat typo.",
+      "variant": 0
+    },
+    {
+      "m": "gone out just because a friend begged me.",
+      "f": "gone out just because a friend begged me.",
+      "variant": 0
+    }
+  ],
+  "Неловкие ситуации": [
+    {
+      "m": "entered the wrong bathroom by mistake.",
+      "f": "entered the wrong bathroom by mistake.",
+      "variant": 0
+    },
+    {
+      "m": "called a teacher mom or dad.",
+      "f": "called a teacher mom or dad.",
+      "variant": 0
+    },
+    {
+      "m": "forgot someone's name immediately after meeting them.",
+      "f": "forgot someone's name immediately after meeting them.",
+      "variant": 0
+    },
+    {
+      "m": "answered a question that was not meant for me.",
+      "f": "answered a question that was not meant for me.",
+      "variant": 0
+    },
+    {
+      "m": "accidentally interrupted a private conversation.",
+      "f": "accidentally interrupted a private conversation.",
+      "variant": 0
+    },
+    {
+      "m": "made eye contact while talking about that very person.",
+      "f": "made eye contact while talking about that very person.",
+      "variant": 0
+    },
+    {
+      "m": "got stuck in an elevator with a stranger.",
+      "f": "got stuck in an elevator with a stranger.",
+      "variant": 0
+    },
+    {
+      "m": "worn a shirt inside out in public.",
+      "f": "worn a shirt inside out in public.",
+      "variant": 0
+    },
+    {
+      "m": "realized my microphone was on at the wrong moment.",
+      "f": "realized my microphone was on at the wrong moment.",
+      "variant": 0
+    },
+    {
+      "m": "mistaken a stranger for a friend.",
+      "f": "mistaken a stranger for a friend.",
+      "variant": 0
+    },
+    {
+      "m": "forgot my own phone number under pressure.",
+      "f": "forgot my own phone number under pressure.",
+      "variant": 0
+    },
+    {
+      "m": "spilled a drink on a stranger.",
+      "f": "spilled a drink on a stranger.",
+      "variant": 0
+    }
+  ],
+  "Смелые признания": [
+    {
+      "m": "been jealous of a friend's success.",
+      "f": "been jealous of a friend's success.",
+      "variant": 0
+    },
+    {
+      "m": "pretended to be more confident than I felt.",
+      "f": "pretended to be more confident than I felt.",
+      "variant": 0
+    },
+    {
+      "m": "changed my opinion just to fit in.",
+      "f": "changed my opinion just to fit in.",
+      "variant": 0
+    },
+    {
+      "m": "been afraid to admit I liked someone.",
+      "f": "been afraid to admit I liked someone.",
+      "variant": 0
+    },
+    {
+      "m": "told a white lie to avoid hurting feelings.",
+      "f": "told a white lie to avoid hurting feelings.",
+      "variant": 0
+    },
+    {
+      "m": "said yes to something I secretly hated.",
+      "f": "said yes to something I secretly hated.",
+      "variant": 0
+    },
+    {
+      "m": "wished I could undo a first impression.",
+      "f": "wished I could undo a first impression.",
+      "variant": 0
+    },
+    {
+      "m": "had a crush I never confessed.",
+      "f": "had a crush I never confessed.",
+      "variant": 0
+    },
+    {
+      "m": "pretended to understand a complicated topic.",
+      "f": "pretended to understand a complicated topic.",
+      "variant": 0
+    },
+    {
+      "m": "felt proud of something very silly.",
+      "f": "felt proud of something very silly.",
+      "variant": 0
+    },
+    {
+      "m": "changed plans because I was nervous.",
+      "f": "changed plans because I was nervous.",
+      "variant": 0
+    },
+    {
+      "m": "hid an embarrassing hobby from friends.",
+      "f": "hid an embarrassing hobby from friends.",
+      "variant": 0
+    }
+  ],
+  "Мужские вопросы": [
+    {
+      "m": "had a crush on my best friend's partner.",
+      "f": "had a crush on my best friend's partner.",
+      "variant": 0
+    },
+    {
+      "m": "lied about my dating experience.",
+      "f": "lied about my dating experience.",
+      "variant": 0
+    },
+    {
+      "m": "been nervous about making the first move.",
+      "f": "been nervous about making the first move.",
+      "variant": 0
+    },
+    {
+      "m": "pretended I was not jealous.",
+      "f": "pretended I was not jealous.",
+      "variant": 0
+    },
+    {
+      "m": "spent way too much money to impress a date.",
+      "f": "spent way too much money to impress a date.",
+      "variant": 0
+    },
+    {
+      "m": "rehearsed a compliment in my head.",
+      "f": "rehearsed a compliment in my head.",
+      "variant": 0
+    },
+    {
+      "m": "agreed to a date I was not excited about.",
+      "f": "agreed to a date I was not excited about.",
+      "variant": 0
+    },
+    {
+      "m": "been surprised by who I found attractive.",
+      "f": "been surprised by who I found attractive.",
+      "variant": 0
+    },
+    {
+      "m": "compared myself to someone's ex.",
+      "f": "compared myself to someone's ex.",
+      "variant": 0
+    },
+    {
+      "m": "been too shy to ask for a phone number.",
+      "f": "been too shy to ask for a phone number.",
+      "variant": 0
+    },
+    {
+      "m": "had a romantic dream about an unexpected person.",
+      "f": "had a romantic dream about an unexpected person.",
+      "variant": 0
+    },
+    {
+      "m": "felt embarrassed about my flirting skills.",
+      "f": "felt embarrassed about my flirting skills.",
+      "variant": 0
+    }
+  ],
+  "Деньги и мораль": [
+    {
+      "m": "kept extra change I was given by mistake.",
+      "f": "kept extra change I was given by mistake.",
+      "variant": 0
+    },
+    {
+      "m": "pretended not to see a dropped banknote.",
+      "f": "pretended not to see a dropped banknote.",
+      "variant": 0
+    },
+    {
+      "m": "lied about the price of something I bought.",
+      "f": "lied about the price of something I bought.",
+      "variant": 0
+    },
+    {
+      "m": "considered taking a job only for the money.",
+      "f": "considered taking a job only for the money.",
+      "variant": 0
+    },
+    {
+      "m": "bought something expensive out of spite.",
+      "f": "bought something expensive out of spite.",
+      "variant": 0
+    },
+    {
+      "m": "regretted lending money to a friend.",
+      "f": "regretted lending money to a friend.",
+      "variant": 0
+    },
+    {
+      "m": "ignored a bill until the last minute.",
+      "f": "ignored a bill until the last minute.",
+      "variant": 0
+    },
+    {
+      "m": "splurged on something ridiculous.",
+      "f": "splurged on something ridiculous.",
+      "variant": 0
+    },
+    {
+      "m": "accepted a gift I did not want.",
+      "f": "accepted a gift I did not want.",
+      "variant": 0
+    },
+    {
+      "m": "hidden a purchase from someone close to me.",
+      "f": "hidden a purchase from someone close to me.",
+      "variant": 0
+    },
+    {
+      "m": "argued about splitting a restaurant bill.",
+      "f": "argued about splitting a restaurant bill.",
+      "variant": 0
+    },
+    {
+      "m": "wondered what I would do for a million dollars.",
+      "f": "wondered what I would do for a million dollars.",
+      "variant": 0
+    }
+  ],
+  "Особо жёсткий 18+": [
+    {
+      "m": "fantasized about someone who was taken.",
+      "f": "fantasized about someone who was taken.",
+      "variant": 0
+    },
+    {
+      "m": "considered cheating and stopped myself.",
+      "f": "considered cheating and stopped myself.",
+      "variant": 0
+    },
+    {
+      "m": "had a crush on a close friend's partner.",
+      "f": "had a crush on a close friend's partner.",
+      "variant": 0
+    },
+    {
+      "m": "kept a hookup secret from everyone.",
+      "f": "kept a hookup secret from everyone.",
+      "variant": 0
+    },
+    {
+      "m": "been turned on by something I was embarrassed to admit.",
+      "f": "been turned on by something I was embarrassed to admit.",
+      "variant": 0
+    },
+    {
+      "m": "lied to a romantic partner about my feelings.",
+      "f": "lied to a romantic partner about my feelings.",
+      "variant": 0
+    },
+    {
+      "m": "kissed someone while secretly thinking of another person.",
+      "f": "kissed someone while secretly thinking of another person.",
+      "variant": 0
+    },
+    {
+      "m": "thought about getting back with an ex just for sex.",
+      "f": "thought about getting back with an ex just for sex.",
+      "variant": 0
+    },
+    {
+      "m": "regretted the morning after a hookup.",
+      "f": "regretted the morning after a hookup.",
+      "variant": 0
+    },
+    {
+      "m": "considered dating someone for money.",
+      "f": "considered dating someone for money.",
+      "variant": 0
+    },
+    {
+      "m": "been attracted to two people in the same friend group.",
+      "f": "been attracted to two people in the same friend group.",
+      "variant": 0
+    },
+    {
+      "m": "made a romantic decision I knew would hurt someone.",
+      "f": "made a romantic decision I knew would hurt someone.",
+      "variant": 0
+    }
+  ],
+  "Работа и офис": [
+    {
+      "m": "pretended my internet was down during a meeting.",
+      "f": "pretended my internet was down during a meeting.",
+      "variant": 0
+    },
+    {
+      "m": "forgot to mute myself on a work call.",
+      "f": "forgot to mute myself on a work call.",
+      "variant": 0
+    },
+    {
+      "m": "sent an email to the wrong coworker.",
+      "f": "sent an email to the wrong coworker.",
+      "variant": 0
+    },
+    {
+      "m": "fallen asleep while working from home.",
+      "f": "fallen asleep while working from home.",
+      "variant": 0
+    },
+    {
+      "m": "taken a meeting in pajamas.",
+      "f": "taken a meeting in pajamas.",
+      "variant": 0
+    },
+    {
+      "m": "googled a term during a presentation.",
+      "f": "googled a term during a presentation.",
+      "variant": 0
+    },
+    {
+      "m": "accidentally replied all.",
+      "f": "accidentally replied all.",
+      "variant": 0
+    },
+    {
+      "m": "complained about work in the wrong chat.",
+      "f": "complained about work in the wrong chat.",
+      "variant": 0
+    },
+    {
+      "m": "made up an excuse for being late.",
+      "f": "made up an excuse for being late.",
+      "variant": 0
+    },
+    {
+      "m": "eaten someone's office snack by mistake.",
+      "f": "eaten someone's office snack by mistake.",
+      "variant": 0
+    },
+    {
+      "m": "been terrified of a calendar notification.",
+      "f": "been terrified of a calendar notification.",
+      "variant": 0
+    },
+    {
+      "m": "celebrated a canceled meeting.",
+      "f": "celebrated a canceled meeting.",
+      "variant": 0
+    }
+  ],
+  "Интернет и соцсети": [
+    {
+      "m": "spent an hour scrolling without noticing.",
+      "f": "spent an hour scrolling without noticing.",
+      "variant": 0
+    },
+    {
+      "m": "deleted a post because it got no likes.",
+      "f": "deleted a post because it got no likes.",
+      "variant": 0
+    },
+    {
+      "m": "used an embarrassing username.",
+      "f": "used an embarrassing username.",
+      "variant": 0
+    },
+    {
+      "m": "made a second account to follow someone.",
+      "f": "made a second account to follow someone.",
+      "variant": 0
+    },
+    {
+      "m": "lost a friendship over a group-chat argument.",
+      "f": "lost a friendship over a group-chat argument.",
+      "variant": 0
+    },
+    {
+      "m": "watched the same video twenty times.",
+      "f": "watched the same video twenty times.",
+      "variant": 0
+    },
+    {
+      "m": "accidentally sent a voice note with background gossip.",
+      "f": "accidentally sent a voice note with background gossip.",
+      "variant": 0
+    },
+    {
+      "m": "been fooled by a fake online story.",
+      "f": "been fooled by a fake online story.",
+      "variant": 0
+    },
+    {
+      "m": "turned off read receipts to avoid a reply.",
+      "f": "turned off read receipts to avoid a reply.",
+      "variant": 0
+    },
+    {
+      "m": "posted something and immediately regretted it.",
+      "f": "posted something and immediately regretted it.",
+      "variant": 0
+    },
+    {
+      "m": "looked up my own name online.",
+      "f": "looked up my own name online.",
+      "variant": 0
+    },
+    {
+      "m": "spent too long choosing a profile picture.",
+      "f": "spent too long choosing a profile picture.",
+      "variant": 0
+    }
+  ],
+  "Путешествия и приключения": [
+    {
+      "m": "missed a flight or train.",
+      "f": "missed a flight or train.",
+      "variant": 0
+    },
+    {
+      "m": "got lost even with a map.",
+      "f": "got lost even with a map.",
+      "variant": 0
+    },
+    {
+      "m": "packed for the wrong weather.",
+      "f": "packed for the wrong weather.",
+      "variant": 0
+    },
+    {
+      "m": "tried food I could not identify.",
+      "f": "tried food I could not identify.",
+      "variant": 0
+    },
+    {
+      "m": "forgot my passport at the wrong moment.",
+      "f": "forgot my passport at the wrong moment.",
+      "variant": 0
+    },
+    {
+      "m": "slept through a stop on public transport.",
+      "f": "slept through a stop on public transport.",
+      "variant": 0
+    },
+    {
+      "m": "made a friend while traveling alone.",
+      "f": "made a friend while traveling alone.",
+      "variant": 0
+    },
+    {
+      "m": "ended up in the wrong hotel.",
+      "f": "ended up in the wrong hotel.",
+      "variant": 0
+    },
+    {
+      "m": "took the wrong bus on vacation.",
+      "f": "took the wrong bus on vacation.",
+      "variant": 0
+    },
+    {
+      "m": "lost luggage on a trip.",
+      "f": "lost luggage on a trip.",
+      "variant": 0
+    },
+    {
+      "m": "visited a famous landmark and felt underwhelmed.",
+      "f": "visited a famous landmark and felt underwhelmed.",
+      "variant": 0
+    },
+    {
+      "m": "booked the cheapest place and instantly regretted it.",
+      "f": "booked the cheapest place and instantly regretted it.",
+      "variant": 0
+    }
+  ],
+  "Еда и странные привычки": [
+    {
+      "m": "eaten pizza for breakfast.",
+      "f": "eaten pizza for breakfast.",
+      "variant": 0
+    },
+    {
+      "m": "pretended to enjoy a terrible meal.",
+      "f": "pretended to enjoy a terrible meal.",
+      "variant": 0
+    },
+    {
+      "m": "stolen fries from someone else's plate.",
+      "f": "stolen fries from someone else's plate.",
+      "variant": 0
+    },
+    {
+      "m": "tried an odd food combination and liked it.",
+      "f": "tried an odd food combination and liked it.",
+      "variant": 0
+    },
+    {
+      "m": "ordered dessert before the main course.",
+      "f": "ordered dessert before the main course.",
+      "variant": 0
+    },
+    {
+      "m": "eaten something straight from the fridge at midnight.",
+      "f": "eaten something straight from the fridge at midnight.",
+      "variant": 0
+    },
+    {
+      "m": "burned water while cooking.",
+      "f": "burned water while cooking.",
+      "variant": 0
+    },
+    {
+      "m": "put ketchup on something controversial.",
+      "f": "put ketchup on something controversial.",
+      "variant": 0
+    },
+    {
+      "m": "eaten the same meal for a week.",
+      "f": "eaten the same meal for a week.",
+      "variant": 0
+    },
+    {
+      "m": "hidden a snack from my roommates.",
+      "f": "hidden a snack from my roommates.",
+      "variant": 0
+    },
+    {
+      "m": "tried to recreate a viral recipe and failed.",
+      "f": "tried to recreate a viral recipe and failed.",
+      "variant": 0
+    },
+    {
+      "m": "sent food back at a restaurant.",
+      "f": "sent food back at a restaurant.",
+      "variant": 0
+    }
+  ],
+  "Семья и детство": [
+    {
+      "m": "blamed a sibling for something I did.",
+      "f": "blamed a sibling for something I did.",
+      "variant": 0
+    },
+    {
+      "m": "pretended to be asleep when my parents checked.",
+      "f": "pretended to be asleep when my parents checked.",
+      "variant": 0
+    },
+    {
+      "m": "broken something and hidden it.",
+      "f": "broken something and hidden it.",
+      "variant": 0
+    },
+    {
+      "m": "run away from home for less than an hour.",
+      "f": "run away from home for less than an hour.",
+      "variant": 0
+    },
+    {
+      "m": "made a ridiculous childhood promise.",
+      "f": "made a ridiculous childhood promise.",
+      "variant": 0
+    },
+    {
+      "m": "believed an absurd family myth.",
+      "f": "believed an absurd family myth.",
+      "variant": 0
+    },
+    {
+      "m": "faked being sick to miss school.",
+      "f": "faked being sick to miss school.",
+      "variant": 0
+    },
+    {
+      "m": "cried over a cartoon.",
+      "f": "cried over a cartoon.",
+      "variant": 0
+    },
+    {
+      "m": "kept a childhood toy for years.",
+      "f": "kept a childhood toy for years.",
+      "variant": 0
+    },
+    {
+      "m": "opened a gift before I was supposed to.",
+      "f": "opened a gift before I was supposed to.",
+      "variant": 0
+    },
+    {
+      "m": "invented a secret code with a friend.",
+      "f": "invented a secret code with a friend.",
+      "variant": 0
+    },
+    {
+      "m": "forgot a family member's birthday.",
+      "f": "forgot a family member's birthday.",
+      "variant": 0
+    }
+  ],
+  "Кино и сериалы": [
+    {
+      "m": "cried during a movie I called silly.",
+      "f": "cried during a movie I called silly.",
+      "variant": 0
+    },
+    {
+      "m": "watched an entire season in one day.",
+      "f": "watched an entire season in one day.",
+      "variant": 0
+    },
+    {
+      "m": "lied about having seen a famous movie.",
+      "f": "lied about having seen a famous movie.",
+      "variant": 0
+    },
+    {
+      "m": "fallen asleep during the final episode.",
+      "f": "fallen asleep during the final episode.",
+      "variant": 0
+    },
+    {
+      "m": "spoiled a plot twist by accident.",
+      "f": "spoiled a plot twist by accident.",
+      "variant": 0
+    },
+    {
+      "m": "rewatched a bad movie because I loved it.",
+      "f": "rewatched a bad movie because I loved it.",
+      "variant": 0
+    },
+    {
+      "m": "left the cinema before the credits.",
+      "f": "left the cinema before the credits.",
+      "variant": 0
+    },
+    {
+      "m": "been scared by a children's movie.",
+      "f": "been scared by a children's movie.",
+      "variant": 0
+    },
+    {
+      "m": "quoted a show at the worst possible time.",
+      "f": "quoted a show at the worst possible time.",
+      "variant": 0
+    },
+    {
+      "m": "had a crush on a fictional character.",
+      "f": "had a crush on a fictional character.",
+      "variant": 0
+    },
+    {
+      "m": "looked up spoilers before finishing a series.",
+      "f": "looked up spoilers before finishing a series.",
+      "variant": 0
+    },
+    {
+      "m": "pretended not to know a famous movie quote.",
+      "f": "pretended not to know a famous movie quote.",
+      "variant": 0
+    }
+  ],
+  "Музыка и караоке": [
+    {
+      "m": "sung the wrong lyrics with confidence.",
+      "f": "sung the wrong lyrics with confidence.",
+      "variant": 0
+    },
+    {
+      "m": "forgot the words during karaoke.",
+      "f": "forgot the words during karaoke.",
+      "variant": 0
+    },
+    {
+      "m": "cried while listening to a song.",
+      "f": "cried while listening to a song.",
+      "variant": 0
+    },
+    {
+      "m": "made a playlist for someone I liked.",
+      "f": "made a playlist for someone I liked.",
+      "variant": 0
+    },
+    {
+      "m": "danced alone in my room.",
+      "f": "danced alone in my room.",
+      "variant": 0
+    },
+    {
+      "m": "pretended to know a band I had never heard.",
+      "f": "pretended to know a band I had never heard.",
+      "variant": 0
+    },
+    {
+      "m": "gone to a concert for one song.",
+      "f": "gone to a concert for one song.",
+      "variant": 0
+    },
+    {
+      "m": "had a song stuck in my head for days.",
+      "f": "had a song stuck in my head for days.",
+      "variant": 0
+    },
+    {
+      "m": "changed the music at a party without asking.",
+      "f": "changed the music at a party without asking.",
+      "variant": 0
+    },
+    {
+      "m": "performed an imaginary concert in the shower.",
+      "f": "performed an imaginary concert in the shower.",
+      "variant": 0
+    },
+    {
+      "m": "sent someone a song as a hint.",
+      "f": "sent someone a song as a hint.",
+      "variant": 0
+    },
+    {
+      "m": "judged someone for their favorite artist.",
+      "f": "judged someone for their favorite artist.",
+      "variant": 0
+    }
+  ],
+  "Игры и геймеры": [
+    {
+      "m": "raged at a video game and immediately apologized.",
+      "f": "raged at a video game and immediately apologized.",
+      "variant": 0
+    },
+    {
+      "m": "stayed up until sunrise gaming.",
+      "f": "stayed up until sunrise gaming.",
+      "variant": 0
+    },
+    {
+      "m": "pretended I had not played a game before.",
+      "f": "pretended I had not played a game before.",
+      "variant": 0
+    },
+    {
+      "m": "blamed lag for my own mistake.",
+      "f": "blamed lag for my own mistake.",
+      "variant": 0
+    },
+    {
+      "m": "spent money on a cosmetic item I never used.",
+      "f": "spent money on a cosmetic item I never used.",
+      "variant": 0
+    },
+    {
+      "m": "lost a friendship over a game for five minutes.",
+      "f": "lost a friendship over a game for five minutes.",
+      "variant": 0
+    },
+    {
+      "m": "forgot to eat while gaming.",
+      "f": "forgot to eat while gaming.",
+      "variant": 0
+    },
+    {
+      "m": "quit a game dramatically and returned the next day.",
+      "f": "quit a game dramatically and returned the next day.",
+      "variant": 0
+    },
+    {
+      "m": "named a game character after a crush.",
+      "f": "named a game character after a crush.",
+      "variant": 0
+    },
+    {
+      "m": "read a walkthrough after claiming I would not.",
+      "f": "read a walkthrough after claiming I would not.",
+      "variant": 0
+    },
+    {
+      "m": "lost to a beginner.",
+      "f": "lost to a beginner.",
+      "variant": 0
+    },
+    {
+      "m": "played the same level for hours.",
+      "f": "played the same level for hours.",
+      "variant": 0
+    }
+  ],
+  "Технологии и гаджеты": [
+    {
+      "m": "sent a screenshot to the person in the screenshot.",
+      "f": "sent a screenshot to the person in the screenshot.",
+      "variant": 0
+    },
+    {
+      "m": "forgot a password I had just changed.",
+      "f": "forgot a password I had just changed.",
+      "variant": 0
+    },
+    {
+      "m": "talked to a voice assistant by mistake.",
+      "f": "talked to a voice assistant by mistake.",
+      "variant": 0
+    },
+    {
+      "m": "lost an hour fixing a printer.",
+      "f": "lost an hour fixing a printer.",
+      "variant": 0
+    },
+    {
+      "m": "dropped my phone in water.",
+      "f": "dropped my phone in water.",
+      "variant": 0
+    },
+    {
+      "m": "accidentally turned on my camera in a meeting.",
+      "f": "accidentally turned on my camera in a meeting.",
+      "variant": 0
+    },
+    {
+      "m": "ignored a software update for months.",
+      "f": "ignored a software update for months.",
+      "variant": 0
+    },
+    {
+      "m": "restarted a device and pretended I fixed it.",
+      "f": "restarted a device and pretended I fixed it.",
+      "variant": 0
+    },
+    {
+      "m": "bought a gadget I barely used.",
+      "f": "bought a gadget I barely used.",
+      "variant": 0
+    },
+    {
+      "m": "kept a broken cable because it might work someday.",
+      "f": "kept a broken cable because it might work someday.",
+      "variant": 0
+    },
+    {
+      "m": "lost photos by forgetting to back them up.",
+      "f": "lost photos by forgetting to back them up.",
+      "variant": 0
+    },
+    {
+      "m": "used a ridiculous phone wallpaper in public.",
+      "f": "used a ridiculous phone wallpaper in public.",
+      "variant": 0
+    }
+  ],
+  "Ночные разговоры": [
+    {
+      "m": "had a deep conversation at four in the morning.",
+      "f": "had a deep conversation at four in the morning.",
+      "variant": 0
+    },
+    {
+      "m": "confessed a secret after midnight.",
+      "f": "confessed a secret after midnight.",
+      "variant": 0
+    },
+    {
+      "m": "watched the sunrise instead of sleeping.",
+      "f": "watched the sunrise instead of sleeping.",
+      "variant": 0
+    },
+    {
+      "m": "sent a risky text late at night.",
+      "f": "sent a risky text late at night.",
+      "variant": 0
+    },
+    {
+      "m": "made a big life decision while sleep-deprived.",
+      "f": "made a big life decision while sleep-deprived.",
+      "variant": 0
+    },
+    {
+      "m": "talked to a stranger all night.",
+      "f": "talked to a stranger all night.",
+      "variant": 0
+    },
+    {
+      "m": "stayed awake just to finish an argument.",
+      "f": "stayed awake just to finish an argument.",
+      "variant": 0
+    },
+    {
+      "m": "had an unexpectedly honest conversation at a party.",
+      "f": "had an unexpectedly honest conversation at a party.",
+      "variant": 0
+    },
+    {
+      "m": "forgot everything I wanted to say the next morning.",
+      "f": "forgot everything I wanted to say the next morning.",
+      "variant": 0
+    },
+    {
+      "m": "called a friend because I could not sleep.",
+      "f": "called a friend because I could not sleep.",
+      "variant": 0
+    },
+    {
+      "m": "laughed at something that was not funny because I was tired.",
+      "f": "laughed at something that was not funny because I was tired.",
+      "variant": 0
+    },
+    {
+      "m": "promised to change my life at 3 a.m..",
+      "f": "promised to change my life at 3 a.m..",
+      "variant": 0
+    }
+  ],
+  "Странные страхи": [
+    {
+      "m": "been afraid of a harmless insect.",
+      "f": "been afraid of a harmless insect.",
+      "variant": 0
+    },
+    {
+      "m": "checked under the bed as an adult.",
+      "f": "checked under the bed as an adult.",
+      "variant": 0
+    },
+    {
+      "m": "jumped at my own reflection.",
+      "f": "jumped at my own reflection.",
+      "variant": 0
+    },
+    {
+      "m": "watched a scary movie through my fingers.",
+      "f": "watched a scary movie through my fingers.",
+      "variant": 0
+    },
+    {
+      "m": "been scared to answer an unknown phone number.",
+      "f": "been scared to answer an unknown phone number.",
+      "variant": 0
+    },
+    {
+      "m": "worried about a completely impossible accident.",
+      "f": "worried about a completely impossible accident.",
+      "variant": 0
+    },
+    {
+      "m": "been afraid of a mannequin.",
+      "f": "been afraid of a mannequin.",
+      "variant": 0
+    },
+    {
+      "m": "avoided a room because it felt creepy.",
+      "f": "avoided a room because it felt creepy.",
+      "variant": 0
+    },
+    {
+      "m": "mistaken a pile of clothes for a person.",
+      "f": "mistaken a pile of clothes for a person.",
+      "variant": 0
+    },
+    {
+      "m": "been startled by my own ringtone.",
+      "f": "been startled by my own ringtone.",
+      "variant": 0
+    },
+    {
+      "m": "had a recurring weird nightmare.",
+      "f": "had a recurring weird nightmare.",
+      "variant": 0
+    },
+    {
+      "m": "been scared of something my friends thought was cute.",
+      "f": "been scared of something my friends thought was cute.",
+      "variant": 0
+    }
+  ],
+  "Абсурдные пари": [
+    {
+      "m": "bet on a coin toss and lost badly.",
+      "f": "bet on a coin toss and lost badly.",
+      "variant": 0
+    },
+    {
+      "m": "accepted a dare I regretted instantly.",
+      "f": "accepted a dare I regretted instantly.",
+      "variant": 0
+    },
+    {
+      "m": "made a silly bet with a friend.",
+      "f": "made a silly bet with a friend.",
+      "variant": 0
+    },
+    {
+      "m": "tried to eat something spicy to prove a point.",
+      "f": "tried to eat something spicy to prove a point.",
+      "variant": 0
+    },
+    {
+      "m": "promised to sing in public and backed out.",
+      "f": "promised to sing in public and backed out.",
+      "variant": 0
+    },
+    {
+      "m": "worn a ridiculous costume because of a bet.",
+      "f": "worn a ridiculous costume because of a bet.",
+      "variant": 0
+    },
+    {
+      "m": "challenged someone to a dance-off.",
+      "f": "challenged someone to a dance-off.",
+      "variant": 0
+    },
+    {
+      "m": "lost a bet and had to tell an embarrassing story.",
+      "f": "lost a bet and had to tell an embarrassing story.",
+      "variant": 0
+    },
+    {
+      "m": "bet I could stay awake all night.",
+      "f": "bet I could stay awake all night.",
+      "variant": 0
+    },
+    {
+      "m": "tried a ridiculous trick for a video.",
+      "f": "tried a ridiculous trick for a video.",
+      "variant": 0
+    },
+    {
+      "m": "made a bet about a stranger's name.",
+      "f": "made a bet about a stranger's name.",
+      "variant": 0
+    },
+    {
+      "m": "won a bet I had no right to win.",
+      "f": "won a bet I had no right to win.",
+      "variant": 0
+    }
+  ],
+  "Неприличные истории 18+": [
+    {
+      "m": "been caught making out in an awkward place.",
+      "f": "been caught making out in an awkward place.",
+      "variant": 0
+    },
+    {
+      "m": "sent a suggestive text to the wrong person.",
+      "f": "sent a suggestive text to the wrong person.",
+      "variant": 0
+    },
+    {
+      "m": "flirted with someone at a completely inappropriate time.",
+      "f": "flirted with someone at a completely inappropriate time.",
+      "variant": 0
+    },
+    {
+      "m": "been embarrassed buying protection.",
+      "f": "been embarrassed buying protection.",
+      "variant": 0
+    },
+    {
+      "m": "had an intimate moment interrupted by a phone call.",
+      "f": "had an intimate moment interrupted by a phone call.",
+      "variant": 0
+    },
+    {
+      "m": "been attracted to someone my friends would never guess.",
+      "f": "been attracted to someone my friends would never guess.",
+      "variant": 0
+    },
+    {
+      "m": "accidentally walked in on a couple kissing.",
+      "f": "accidentally walked in on a couple kissing.",
+      "variant": 0
+    },
+    {
+      "m": "kissed someone just to settle a bet.",
+      "f": "kissed someone just to settle a bet.",
+      "variant": 0
+    },
+    {
+      "m": "pretended I had never met someone I hooked up with.",
+      "f": "pretended I had never met someone I hooked up with.",
+      "variant": 0
+    },
+    {
+      "m": "had an awkward conversation about a one-night stand.",
+      "f": "had an awkward conversation about a one-night stand.",
+      "variant": 0
+    },
+    {
+      "m": "kept a romantic secret for years.",
+      "f": "kept a romantic secret for years.",
+      "variant": 0
+    },
+    {
+      "m": "had a crush on a stranger at a party.",
+      "f": "had a crush on a stranger at a party.",
+      "variant": 0
+    }
+  ],
+  "Дом и быт": [
+    {
+      "m": "forgot to take out the trash.",
+      "f": "forgot to take out the trash.",
+      "variant": 0
+    },
+    {
+      "m": "pretended not to hear the doorbell.",
+      "f": "pretended not to hear the doorbell.",
+      "variant": 0
+    },
+    {
+      "m": "lost my keys while holding them.",
+      "f": "lost my keys while holding them.",
+      "variant": 0
+    },
+    {
+      "m": "broken a chair by sitting on it.",
+      "f": "broken a chair by sitting on it.",
+      "variant": 0
+    },
+    {
+      "m": "spent a weekend cleaning instead of going out.",
+      "f": "spent a weekend cleaning instead of going out.",
+      "variant": 0
+    },
+    {
+      "m": "ordered takeout because I was too lazy to wash dishes.",
+      "f": "ordered takeout because I was too lazy to wash dishes.",
+      "variant": 0
+    },
+    {
+      "m": "talked to my plants.",
+      "f": "talked to my plants.",
+      "variant": 0
+    },
+    {
+      "m": "left wet laundry in the machine overnight.",
+      "f": "left wet laundry in the machine overnight.",
+      "variant": 0
+    },
+    {
+      "m": "rearranged furniture at three in the morning.",
+      "f": "rearranged furniture at three in the morning.",
+      "variant": 0
+    },
+    {
+      "m": "broken a kitchen appliance trying to fix it.",
+      "f": "broken a kitchen appliance trying to fix it.",
+      "variant": 0
+    }
+  ],
+  "Спорт и приключения": [
+    {
+      "m": "joined a gym and barely went.",
+      "f": "joined a gym and barely went.",
+      "variant": 0
+    },
+    {
+      "m": "cheered for the wrong team.",
+      "f": "cheered for the wrong team.",
+      "variant": 0
+    },
+    {
+      "m": "pretended an injury was worse than it was.",
+      "f": "pretended an injury was worse than it was.",
+      "variant": 0
+    },
+    {
+      "m": "got lost on a short hike.",
+      "f": "got lost on a short hike.",
+      "variant": 0
+    },
+    {
+      "m": "gone running just to avoid a conversation.",
+      "f": "gone running just to avoid a conversation.",
+      "variant": 0
+    },
+    {
+      "m": "tried to do a backflip and failed.",
+      "f": "tried to do a backflip and failed.",
+      "variant": 0
+    },
+    {
+      "m": "fallen off a bike in front of friends.",
+      "f": "fallen off a bike in front of friends.",
+      "variant": 0
+    },
+    {
+      "m": "forgot the rules in the middle of a game.",
+      "f": "forgot the rules in the middle of a game.",
+      "variant": 0
+    },
+    {
+      "m": "challenged someone to a race and lost.",
+      "f": "challenged someone to a race and lost.",
+      "variant": 0
+    },
+    {
+      "m": "stayed at the gym longer just because of a crush.",
+      "f": "stayed at the gym longer just because of a crush.",
+      "variant": 0
+    }
+  ],
+  "Животные и питомцы": [
+    {
+      "m": "talked to a pet like a human.",
+      "f": "talked to a pet like a human.",
+      "variant": 0
+    },
+    {
+      "m": "given a pet a ridiculous nickname.",
+      "f": "given a pet a ridiculous nickname.",
+      "variant": 0
+    },
+    {
+      "m": "been jealous of how much someone loved their dog.",
+      "f": "been jealous of how much someone loved their dog.",
+      "variant": 0
+    },
+    {
+      "m": "lost a shoe to a puppy.",
+      "f": "lost a shoe to a puppy.",
+      "variant": 0
+    },
+    {
+      "m": "been scared of a tiny animal.",
+      "f": "been scared of a tiny animal.",
+      "variant": 0
+    },
+    {
+      "m": "cried at a video about a rescued pet.",
+      "f": "cried at a video about a rescued pet.",
+      "variant": 0
+    },
+    {
+      "m": "fed a stray animal.",
+      "f": "fed a stray animal.",
+      "variant": 0
+    },
+    {
+      "m": "told a secret to a pet.",
+      "f": "told a secret to a pet.",
+      "variant": 0
+    },
+    {
+      "m": "slept in an uncomfortable position so a pet could be comfortable.",
+      "f": "slept in an uncomfortable position so a pet could be comfortable.",
+      "variant": 0
+    },
+    {
+      "m": "taken more photos of an animal than my friends.",
+      "f": "taken more photos of an animal than my friends.",
+      "variant": 0
+    }
+  ],
+  "Школа и универ": [
+    {
+      "m": "forgot about an exam.",
+      "f": "forgot about an exam.",
+      "variant": 0
+    },
+    {
+      "m": "copied homework five minutes before class.",
+      "f": "copied homework five minutes before class.",
+      "variant": 0
+    },
+    {
+      "m": "called a teacher by the wrong name.",
+      "f": "called a teacher by the wrong name.",
+      "variant": 0
+    },
+    {
+      "m": "fallen asleep during a lecture.",
+      "f": "fallen asleep during a lecture.",
+      "variant": 0
+    },
+    {
+      "m": "made a presentation without reading the material.",
+      "f": "made a presentation without reading the material.",
+      "variant": 0
+    },
+    {
+      "m": "lied about doing the assigned reading.",
+      "f": "lied about doing the assigned reading.",
+      "variant": 0
+    },
+    {
+      "m": "had a crush on a classmate.",
+      "f": "had a crush on a classmate.",
+      "variant": 0
+    },
+    {
+      "m": "skipped a class to hang out with friends.",
+      "f": "skipped a class to hang out with friends.",
+      "variant": 0
+    },
+    {
+      "m": "walked into the wrong lecture hall.",
+      "f": "walked into the wrong lecture hall.",
+      "variant": 0
+    },
+    {
+      "m": "panicked because I thought there was an exam.",
+      "f": "panicked because I thought there was an exam.",
+      "variant": 0
+    }
+  ],
+  "Соседи и город": [
+    {
+      "m": "complained about a noisy neighbor while being noisy myself.",
+      "f": "complained about a noisy neighbor while being noisy myself.",
+      "variant": 0
+    },
+    {
+      "m": "taken the wrong bus.",
+      "f": "taken the wrong bus.",
+      "variant": 0
+    },
+    {
+      "m": "gotten lost in my own neighborhood.",
+      "f": "gotten lost in my own neighborhood.",
+      "variant": 0
+    },
+    {
+      "m": "locked myself out of my apartment.",
+      "f": "locked myself out of my apartment.",
+      "variant": 0
+    },
+    {
+      "m": "held an elevator door for a stranger and regretted it.",
+      "f": "held an elevator door for a stranger and regretted it.",
+      "variant": 0
+    },
+    {
+      "m": "argued over a parking space.",
+      "f": "argued over a parking space.",
+      "variant": 0
+    },
+    {
+      "m": "pretended not to see someone I knew on the street.",
+      "f": "pretended not to see someone I knew on the street.",
+      "variant": 0
+    },
+    {
+      "m": "walked past the same person three times while lost.",
+      "f": "walked past the same person three times while lost.",
+      "variant": 0
+    },
+    {
+      "m": "followed a stranger thinking they were a friend.",
+      "f": "followed a stranger thinking they were a friend.",
+      "variant": 0
+    },
+    {
+      "m": "helped a neighbor with a weird request.",
+      "f": "helped a neighbor with a weird request.",
+      "variant": 0
+    }
+  ],
+  "Мода и стиль": [
+    {
+      "m": "bought clothes I never wore.",
+      "f": "bought clothes I never wore.",
+      "variant": 0
+    },
+    {
+      "m": "worn mismatched socks on purpose.",
+      "f": "worn mismatched socks on purpose.",
+      "variant": 0
+    },
+    {
+      "m": "tried to cut my own hair.",
+      "f": "tried to cut my own hair.",
+      "variant": 0
+    },
+    {
+      "m": "copied a celebrity outfit.",
+      "f": "copied a celebrity outfit.",
+      "variant": 0
+    },
+    {
+      "m": "kept an old shirt for sentimental reasons.",
+      "f": "kept an old shirt for sentimental reasons.",
+      "variant": 0
+    },
+    {
+      "m": "changed outfits five times before a date.",
+      "f": "changed outfits five times before a date.",
+      "variant": 0
+    },
+    {
+      "m": "worn uncomfortable shoes just for looks.",
+      "f": "worn uncomfortable shoes just for looks.",
+      "variant": 0
+    },
+    {
+      "m": "asked a friend for a brutally honest fashion opinion.",
+      "f": "asked a friend for a brutally honest fashion opinion.",
+      "variant": 0
+    },
+    {
+      "m": "bought something only because it was on sale.",
+      "f": "bought something only because it was on sale.",
+      "variant": 0
+    },
+    {
+      "m": "posted an outfit photo and deleted it.",
+      "f": "posted an outfit photo and deleted it.",
+      "variant": 0
+    }
+  ],
+  "Тёмные мысли и моральные дилеммы": [
+    {
+      "m": "wished I could read someone’s mind.",
+      "f": "wished I could read someone’s mind.",
+      "variant": 0
+    },
+    {
+      "m": "imagined quitting everything and moving away.",
+      "f": "imagined quitting everything and moving away.",
+      "variant": 0
+    },
+    {
+      "m": "kept silent when I knew someone was wrong.",
+      "f": "kept silent when I knew someone was wrong.",
+      "variant": 0
+    },
+    {
+      "m": "felt relieved when a plan was canceled.",
+      "f": "felt relieved when a plan was canceled.",
+      "variant": 0
+    },
+    {
+      "m": "wondered whether I would keep an unexpected fortune.",
+      "f": "wondered whether I would keep an unexpected fortune.",
+      "variant": 0
+    },
+    {
+      "m": "regretted judging someone too quickly.",
+      "f": "regretted judging someone too quickly.",
+      "variant": 0
+    },
+    {
+      "m": "wanted to disappear from social media for a year.",
+      "f": "wanted to disappear from social media for a year.",
+      "variant": 0
+    },
+    {
+      "m": "felt guilty about being secretly pleased by a rival’s failure.",
+      "f": "felt guilty about being secretly pleased by a rival’s failure.",
+      "variant": 0
+    },
+    {
+      "m": "thought about changing my name and starting over.",
+      "f": "thought about changing my name and starting over.",
+      "variant": 0
+    },
+    {
+      "m": "pretended to agree with something I did not believe.",
+      "f": "pretended to agree with something I did not believe.",
+      "variant": 0
+    }
+  ]
+}
