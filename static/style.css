@@ -78,3 +78,5 @@ html{min-width:280px}body{min-width:280px}main,.panel,.config,.split,.card{min-w
 }
 @media(max-width:380px){header{gap:4px}.status{max-width:70px}.readerName{font-size:clamp(23px,7.5vw,32px)}.pill{font-size:10px}.cardTape{font-size:11px}.question{font-size:clamp(18px,5.6vw,23px)}}
 @media(prefers-reduced-motion:reduce){.effectToast{animation:none!important}}
+
+.modes{flex-wrap:wrap}.modes .mode{min-width:calc(50% - 6px);flex:1}.customQuestion{width:100%;padding:12px;border:2px solid #bb8af5;border-radius:14px;background:#2d0049;color:white;font-size:17px;margin:5px 0 10px}#challengeActions{margin:14px 0}#gameTimer{font-weight:900;color:#c7ff00;text-align:center;font-size:16px}#profileToggle{margin:4px auto 8px;display:block}#customStatus{color:#d6ff5d}@media(max-height:680px){#gameTimer{font-size:13px}.reader{padding:4px 0}.modes .mode{padding:9px 5px}}

@@ -1,5 +1,6 @@
 """Party Edition 6.8 multi-room online server. Pure Python 3.11+."""
 import importlib.util
+import quiz_runtime as quiz
 import json
 import os
 from pathlib import Path
@@ -42,7 +43,7 @@ def get_room(code):
     ROOM_CACHE[code]=room
     return room
 
-def create_room():
+def create_room(game='never'):
     with LOCK:
         count = len(list(ROOMS.glob('*.meta.json')))
         if count >= MAX_ROOMS: raise ValueError('Достигнут лимит комнат. Обратитесь к администратору.')
@@ -51,7 +52,7 @@ def create_room():
             if not (ROOMS/f'{code}.meta.json').exists(): break
         else: raise ValueError('Не удалось создать комнату')
         admin=secrets.token_urlsafe(32)
-        meta={'admin':admin,'created':time.time()}
+        meta={'admin':admin,'created':time.time(),'game':game}
         meta_path=ROOMS/f'{code}.meta.json'
         # Exclusive file creation prevents code collisions.
         with meta_path.open('x',encoding='utf8') as fp: json.dump(meta,fp)
@@ -66,6 +67,12 @@ def activate(room):
     engine.ADMIN=room['meta']['admin']
 
 
+def quiz_path(room):
+    return ROOMS/f"{room['code']}.quiz.json"
+
+def quiz_state(room):
+    return quiz.load(quiz_path(room))
+
 def view(room, token, admin):
     activate(room)
     answer=engine.snapshot(token,admin)
@@ -73,7 +80,7 @@ def view(room, token, admin):
     answer['room_code']=room['code']
     return answer
 
-HOME="""<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>🥂 Party Online</title><style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:radial-gradient(circle at 50% 10%,#840fc1,#2e004e 75%);color:white;font:17px system-ui}main{width:min(460px,90vw);background:#510b7d;padding:25px;border:3px solid #d995ff;border-radius:24px;box-shadow:0 8px 0 #1a002b}h1{font-size:29px}button,input{box-sizing:border-box;width:100%;padding:16px;margin:9px 0;border-radius:12px;font-size:18px}button{background:#c7ff00;color:#310040;border:3px solid white;font-weight:900;cursor:pointer}input{background:radial-gradient(circle at 50% 10%,#840fc1,#2e004e 75%);color:white;border:1px solid #79718b}p{opacity:.75}#msg{color:#ffbcbc}</style></head><body><main><div style="text-align:right"><button id="lang" style="width:auto;padding:8px;margin:0;background:#ff4cc7">EN / RU</button></div><h1 id="homeTitle">♛ Я НИКОГДА НЕ…</h1><p id="intro">Создай онлайн-комнату или введи код друзей. Работает на Android, iPhone и ПК.</p><button id="new">🎉 СОЗДАТЬ КОМНАТУ</button><hr><form id="join"><input id="code" placeholder="Код комнаты из 6 символов" maxlength="6" autocomplete="off" required><button id="joinBtn" type="submit">🚀 Присоединиться</button></form><p id="msg"></p></main><script>const applyLang=()=>{let en=localStorage.getItem('party-home-lang')==='en';document.documentElement.lang=en?'en':'ru';document.getElementById('homeTitle').textContent=en?'♛ NEVER HAVE I EVER…':'♛ Я НИКОГДА НЕ…';document.getElementById('intro').textContent=en?'Create a room or enter a friend’s code. Works on Android, iPhone and desktop.':'Создай онлайн-комнату или введи код друзей. Работает на Android, iPhone и ПК.';document.getElementById('new').textContent=en?'🎉 CREATE ROOM':'🎉 СОЗДАТЬ КОМНАТУ';document.getElementById('joinBtn').textContent=en?'🚀 JOIN':'🚀 Присоединиться';document.getElementById('code').placeholder=en?'6-character room code':'Код комнаты из 6 символов'};document.getElementById('lang').onclick=()=>{localStorage.setItem('party-home-lang',localStorage.getItem('party-home-lang')==='en'?'ru':'en');applyLang()};applyLang();document.getElementById('new').onclick=async()=>{try{const r=await fetch('/api/rooms',{method:'POST'});const j=await r.json();if(!r.ok)throw Error(j.error);location.href=j.host_url;}catch(e){document.getElementById('msg').textContent=e.message}};document.getElementById('join').onsubmit=e=>{e.preventDefault();location.href='/r/'+document.getElementById('code').value.trim().toUpperCase()+'/join'}</script></body></html>"""
+HOME="""<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>🥂 Party Online</title><style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:radial-gradient(circle at 50% 10%,#840fc1,#2e004e 75%);color:white;font:17px system-ui}main{width:min(460px,90vw);background:#510b7d;padding:25px;border:3px solid #d995ff;border-radius:24px;box-shadow:0 8px 0 #1a002b}h1{font-size:29px}button,input{box-sizing:border-box;width:100%;padding:16px;margin:9px 0;border-radius:12px;font-size:18px}button{background:#c7ff00;color:#310040;border:3px solid white;font-weight:900;cursor:pointer}input{background:radial-gradient(circle at 50% 10%,#840fc1,#2e004e 75%);color:white;border:1px solid #79718b}p{opacity:.75}#msg{color:#ffbcbc}</style></head><body><main><div style="text-align:right"><button id="lang" style="width:auto;padding:8px;margin:0;background:#ff4cc7">EN / RU</button></div><h1 id="homeTitle">♛ Я НИКОГДА НЕ…</h1><p id="intro">Создай онлайн-комнату или введи код друзей. Работает на Android, iPhone и ПК.</p><button id="new">🎉 Я НИКОГДА НЕ…</button><button id="newQuiz" style="background:#ff4ec7">🎲 СОЗДАТЬ КВИЗ</button><hr><form id="join"><input id="code" placeholder="Код комнаты из 6 символов" maxlength="6" autocomplete="off" required><button id="joinBtn" type="submit">🚀 Присоединиться</button></form><p id="msg"></p></main><script>const applyLang=()=>{let en=localStorage.getItem('party-home-lang')==='en';document.documentElement.lang=en?'en':'ru';document.getElementById('homeTitle').textContent=en?'♛ NEVER HAVE I EVER…':'♛ Я НИКОГДА НЕ…';document.getElementById('intro').textContent=en?'Create a room or enter a friend’s code. Works on Android, iPhone and desktop.':'Создай онлайн-комнату или введи код друзей. Работает на Android, iPhone и ПК.';document.getElementById('new').textContent=en?'🎉 NEVER HAVE I EVER':'🎉 Я НИКОГДА НЕ…';document.getElementById('newQuiz').textContent=en?'🎲 CREATE QUIZ':'🎲 СОЗДАТЬ КВИЗ';document.getElementById('joinBtn').textContent=en?'🚀 JOIN':'🚀 Присоединиться';document.getElementById('code').placeholder=en?'6-character room code':'Код комнаты из 6 символов'};document.getElementById('lang').onclick=()=>{localStorage.setItem('party-home-lang',localStorage.getItem('party-home-lang')==='en'?'ru':'en');applyLang()};applyLang();async function createNewRoom(game){try{const r=await fetch('/api/rooms?game='+game,{method:'POST'});const j=await r.json();if(!r.ok)throw Error(j.error);location.href=j.host_url;}catch(e){document.getElementById('msg').textContent=e.message}};document.getElementById('new').onclick=()=>createNewRoom('never');document.getElementById('newQuiz').onclick=()=>createNewRoom('quiz');document.getElementById('join').onsubmit=e=>{e.preventDefault();location.href='/r/'+document.getElementById('code').value.trim().toUpperCase()+'/join'}</script></body></html>"""
 
 class Handler(BaseHTTPRequestHandler):
     def log_message(self, format, *args):
@@ -99,6 +106,25 @@ class Handler(BaseHTTPRequestHandler):
         return self.headers.get('X-Party-Token',''),admin
     def do_GET(self):
         path=urlsplit(self.path).path
+        room,resource=self.route()
+        if room and room['meta'].get('game')=='quiz':
+            prefix='/r/'+room['code']+'/quiz'
+            if resource in ('quiz/host','quiz/join'):
+                is_host=resource.endswith('host')
+                if is_host and not secrets.compare_digest(parse_qs(urlsplit(self.path).query).get('key',[''])[0],room['meta']['admin']):
+                    return self.json({'error':'Нет доступа'},403)
+                html=(ROOT/'static/quiz.html').read_text(encoding='utf8').replace('__QUIZ_STATIC__',prefix+'/static/').replace('__QUIZ_BASE__',json.dumps(prefix)).replace('__QUIZ_ADMIN__',json.dumps(room['meta']['admin'] if is_host else ''))
+                return self.send_data(html,'text/html; charset=utf-8')
+            if resource in ('quiz/static/quiz.css','quiz/static/quiz.js'):
+                name=resource.rsplit('/',1)[-1]
+                return self.send_data((ROOT/'static'/name).read_bytes(),'text/css' if name.endswith('.css') else 'application/javascript')
+            if resource=='quiz/api/state':
+                token,adm=self.auth(room)
+                with LOCK:return self.json(quiz.snapshot(quiz_state(room),token,adm))
+            if resource=='join':
+                self.send_response(302);self.send_header('Location',prefix+'/join');self.end_headers();return
+            if resource=='host':
+                self.send_response(302);self.send_header('Location',prefix+'/host?'+urlsplit(self.path).query);self.end_headers();return
         if path in ('/','/join'):
             return self.send_data(HOME,'text/html; charset=utf-8')
         if path=='/health':return self.json({'status':'ok'})
@@ -142,11 +168,25 @@ class Handler(BaseHTTPRequestHandler):
         path=urlsplit(self.path).path
         if path=='/api/rooms':
             try:
-                room=create_room()
-                return self.json({'code':room['code'],'host_url':f'{PUBLIC}/r/{room["code"]}/host?key={room["meta"]["admin"]}','join_url':f'{PUBLIC}/r/{room["code"]}/join'},201)
+                game=parse_qs(urlsplit(self.path).query).get('game',['never'])[0]
+                if game not in ('never','quiz'):raise ValueError('Неизвестная игра')
+                room=create_room(game)
+                suffix='/quiz' if game=='quiz' else ''
+                return self.json({'code':room['code'],'host_url':f'{PUBLIC}/r/{room["code"]}{suffix}/host?key={room["meta"]["admin"]}','join_url':f'{PUBLIC}/r/{room["code"]}{suffix}/join'},201)
             except ValueError as e:return self.json({'error':str(e)},429)
         room,resource=self.route()
-        if not room or resource!='api/action':return self.json({'error':'Not found'},404)
+        if room and room['meta'].get('game')=='quiz' and resource=='quiz/api/action':
+            try:
+                n=int(self.headers.get('Content-Length','0'))
+                if not 0<n<10000:raise ValueError('Неверный запрос')
+                data=json.loads(self.rfile.read(n));token,adm=self.auth(room)
+                with LOCK:
+                    state=quiz_state(room)
+                    answer=quiz.act(state,data,token,adm)
+                    quiz.save(quiz_path(room),state)
+                    return self.json(answer)
+            except (ValueError,TypeError,KeyError,json.JSONDecodeError) as exc:return self.json({'error':str(exc)},400)
+        if not room or resource!='api/action' :return self.json({'error':'Not found'},404)
         try:
             n=int(self.headers.get('Content-Length','0'))
             if not 0<n<=10000:raise ValueError('Неверный запрос')

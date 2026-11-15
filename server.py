@@ -17,14 +17,14 @@ EN_CARDS = json.loads((ROOT / 'questions_en.json').read_text(encoding='utf-8'))
 EN_EVENTS = json.loads((ROOT / 'events_en.json').read_text(encoding='utf-8'))
 TOPICS = list(CARDS)
 CARD_IDS = {topic: {f'{topic}:{i}': card for i, card in enumerate(cards)} for topic, cards in CARDS.items()}
-BANK_VERSION = 70
+BANK_VERSION = 730
 EXTREME = 'Особо жёсткий 18+'
 PORT = int(os.environ.get('PARTY_PORT', '8765'))
 ADMIN = os.environ.get('PARTY_ADMIN_KEY') or secrets.token_urlsafe(24)
 LOCK = threading.RLock()
 
 def blank():
-    return dict(revision=0, phase='lobby', players=[], settings={'mode':'quick','total':20,'extreme':False,'topics':[t for t in TOPICS if t != EXTREME], 'events':True,'rate':0.16,'party_level':3,'language':'ru'}, current=None, index=0, deck=[], bank_version=BANK_VERSION, events_deck=[], last=None, reader_override=None, last_event=False, effect=None)
+    return dict(revision=0, phase='lobby', players=[], settings={'mode':'quick','total':20,'extreme':False,'topics':[t for t in TOPICS if t != EXTREME], 'events':True,'rate':0.16,'party_level':3,'language':'ru'}, current=None, index=0, deck=[], bank_version=BANK_VERSION, events_deck=[], last=None, reader_override=None, last_event=False, effect=None, custom_questions={}, challenge_votes={}, challenge_deadline=None, start_time=None)
 STATE_FILE = Path(os.environ.get('PARTY_STATE_FILE', str(ROOT / '.party_state.json')))
 
 def restore():
@@ -35,6 +35,7 @@ def restore():
         # Compatibility with existing 5.x / 6.0 state structure.
         base = blank()
         base.update(saved)
+        base.setdefault('custom_questions',{});base.setdefault('challenge_votes',{});base.setdefault('challenge_deadline',None);base.setdefault('start_time',None)
         # Old cached decks contained dictionaries instead of compact card IDs.
         # Discard the cached draw order, not the room or currently displayed card.
         if base.get('bank_version') != BANK_VERSION or any(not isinstance(x, str) for x in base.get('deck', [])):
@@ -69,14 +70,29 @@ def require(ok, message='Нет доступа'):
 
 def draw():
     g=GAME
-    if g['settings']['mode']=='quick' and g['index']>=g['settings']['total']:
+    if g['settings']['mode'] in ('quick','challenge') and g['index']>=g['settings']['total']:
         g['phase']='ended';g['current']=None;touch();return
     players=g['players'];reader=g['reader_override'] if g['reader_override'] is not None else g['index']%len(players)
     g['reader_override']=None
+    if g['settings']['mode']=='custom':
+        pool=[q for vals in g.get('custom_questions',{}).values() for q in vals]
+        if not pool:
+            g['phase']='ended';g['current']=None;touch();return
+        if not g['deck']:
+            g['deck']=[f'custom:{i}' for i in range(len(pool))];random.shuffle(g['deck'])
+            if len(g['deck'])>1 and g['deck'][-1]==g.get('last_custom_id'):
+                g['deck'][0],g['deck'][-1]=g['deck'][-1],g['deck'][0]
+        drawn=g['deck'].pop();g['last_custom_id']=drawn;index=int(drawn.split(':')[1]);body=pool[index]
+        g['current']={'event':False,'topic':'Своя игра','text':'Я никогда не '+body,'female_text':'Я никогда не '+body,
+                      'title':'Я НИКОГДА НЕ…','reader':players[reader]['id'],'revealed':True}
+        g['challenge_votes']={};g['challenge_deadline']=None;g['last_event']=False;touch();return
+    if g['settings']['mode']=='challenge':
+        g['challenge_votes']={};g['challenge_deadline']=time.time()+5
+    else:g['challenge_deadline']=None
     # Party level adds surprise, without changing how much anyone is expected to drink.
     level=g['settings'].get('party_level',3)
     effective_rate=min(0.65, g['settings']['rate'] * (0.60 + 0.20*level))
-    event=g['settings']['events'] and not g['last_event'] and random.random()<effective_rate
+    event=g['settings']['mode']!='challenge' and g['settings']['events'] and not g['last_event'] and random.random()<effective_rate
     if event:
         # A rare all-player interruption; probability increases with party level.
         bear_chance={1:0.06,2:0.10,3:0.16,4:0.24,5:0.34}[level]
@@ -125,6 +141,13 @@ def draw():
     g['last_event']=event;g['effect']=None;touch()
 
 def snapshot(token, admin):
+    g0=GAME
+    if g0['phase']=='playing' and g0['settings'].get('mode')=='challenge' and g0.get('challenge_deadline') and time.time()>=g0['challenge_deadline']:
+        changed=False
+        for p in g0['players']:
+            if p['id'] not in g0.setdefault('challenge_votes',{}):
+                g0['challenge_votes'][p['id']]='yes';changed=True
+        if changed:touch()
     g=GAME;current=g['current']; mine=next((p for p in g['players'] if p['token']==token),None)
     visible=None
     if current:
@@ -133,7 +156,7 @@ def snapshot(token, admin):
         reader_player=next((p for p in g['players'] if p['id']==current['reader']),None)
         if reader_player and reader_player.get('gender')=='female' and current.get('female_text'):
             visible['text']=current['female_text']
-    return {'revision':g['revision'],'phase':g['phase'],'players':[{'id':p['id'],'name':p['name'],'gender':p.get('gender','male')} for p in g['players']], 'me':mine['id'] if mine else None, 'is_admin':admin,'current':visible,'reader':current['reader'] if current else None,'index':g['index'],'settings':g['settings'],'effect':g['effect'], 'topics':{k:sum(card.get('variant')==0 for card in v) for k,v in CARDS.items()} if admin else None,'address':f'http://{LAN_IP}:{PORT}/join','join_count':len(g['players'])}
+    return {'revision':g['revision'],'phase':g['phase'],'players':[{'id':p['id'],'name':p['name'],'gender':p.get('gender','male')} for p in g['players']], 'me':mine['id'] if mine else None, 'is_admin':admin,'current':visible,'reader':current['reader'] if current else None,'index':g['index'],'settings':g['settings'],'effect':g['effect'], 'topics':{k:sum(card.get('variant')==0 for card in v) for k,v in CARDS.items()} if admin else None,'address':f'http://{LAN_IP}:{PORT}/join','join_count':len(g['players']), 'custom_count':{p['id']:len(g.get('custom_questions',{}).get(p['id'],[])) for p in g['players']}, 'challenge_deadline':g.get('challenge_deadline'), 'challenge_votes':{pid:True for pid in g.get('challenge_votes',{})}, 'my_challenge_vote':g.get('challenge_votes',{}).get(mine['id'] if mine else ''), 'start_time':g.get('start_time')}
 
 def action(data, token, admin):
     with LOCK:
@@ -141,7 +164,7 @@ def action(data, token, admin):
         if act=='join':
             require(g['phase']=='lobby','Партия уже идёт. Попросите ведущего запустить новую комнату.')
             if mine:return snapshot(token,admin)
-            require(len(g['players'])<4,'Комната заполнена (максимум 4 игрока).')
+            require(len(g['players'])<16,'Комната заполнена (максимум 16 игроков).')
             name=str(data.get('name','')).strip()[:30]
             gender=data.get('gender','male')
             require(gender in ('male','female'),'Укажите грамматический род: мужской или женский.')
@@ -164,15 +187,33 @@ def action(data, token, admin):
             g['players']=[p for p in g['players'] if p is not mine]
             if g['settings']['total']==max(2,previous)*10: g['settings']['total']=max(2,len(g['players']))*10
             touch();return snapshot(None,False)
+        if act=='submit_custom':
+            require(mine is not None and g['phase']=='lobby','Вопросы можно вносить только в лобби')
+            values=data.get('questions')
+            require(isinstance(values,list) and len(values)==5,'Нужно написать ровно 5 вопросов')
+            cleaned=[]
+            for val in values:
+                v=str(val).strip()
+                require(4<=len(v)<=200,'Каждый вопрос должен содержать 4–200 символов')
+                v=v.removeprefix('Я никогда не ').removeprefix('я никогда не ').strip().rstrip(' .!?')
+                cleaned.append(v)
+            g.setdefault('custom_questions',{})[mine['id']]=cleaned;touch();return snapshot(token,admin)
+        if act=='vote':
+            require(g['phase']=='playing' and g['settings'].get('mode')=='challenge','Сейчас не идёт испытание')
+            require(mine is not None,'Требуется игрок')
+            require(time.time()<g.get('challenge_deadline',0),'Время вышло: засчитано «Было»')
+            require(mine['id'] not in g.setdefault('challenge_votes',{}),'Вы уже ответили')
+            answer=data.get('kind');require(answer in ('yes','no'),'Неверный ответ')
+            g['challenge_votes'][mine['id']]=answer;touch();return snapshot(token,admin)
         if act=='settings':
             require(admin and g['phase']=='lobby')
             opt=data.get('settings') or {};require(isinstance(opt,dict),'Неверные настройки')
-            mode=opt.get('mode','quick');require(mode in ('quick','endless'),'Неверный режим')
+            mode=opt.get('mode','quick');require(mode in ('quick','endless','challenge','custom'),'Неверный режим')
             total=opt.get('total');require(type(total)==int and 1<=total<=10000,'Количество вопросов: 1–10000')
             extreme=opt.get('extreme') is True
             topics=opt.get('topics');require(isinstance(topics,list),'Выберите темы')
             topics=list(dict.fromkeys(t for t in topics if t in TOPICS and t!=EXTREME))
-            require(extreme or bool(topics),'Выберите хотя бы одну тему')
+            require(mode=='custom' or extreme or bool(topics),'Выберите хотя бы одну тему')
             rate=opt.get('rate',0.16);require(type(rate) in (int,float) and 0<=rate<=0.5,'Частота событий от 0 до 50%')
             level=opt.get('party_level',3);require(type(level)==int and 1<=level<=5,'Уровень вечеринки: 1–5')
             language=opt.get('language','ru');require(language in ('ru','en'),'Unsupported language')
@@ -184,11 +225,16 @@ def action(data, token, admin):
             if g['settings']['total']==max(2,previous)*10: g['settings']['total']=max(2,len(g['players']))*10
             touch();return snapshot(token,admin)
         if act=='start':
-            require(admin and g['phase']=='lobby');require(2<=len(g['players'])<=4,'Для старта нужно 2–4 игрока.')
-            g['phase']='playing';g['index']=0;g['deck']=[];g['bank_version']=BANK_VERSION;g['events_deck']=[];g['last']=None;g['last_event']=False;g['reader_override']=None;draw();return snapshot(token,admin)
+            require(admin and g['phase']=='lobby');require(1<=len(g['players'])<=16,'Для старта нужно 1–16 игроков.')
+            if g['settings'].get('mode')=='custom':
+                require(all(len(g.get('custom_questions',{}).get(p['id'],[]))==5 for p in g['players']), 'Каждый игрок должен добавить по 5 вопросов')
+            g['phase']='playing';g['start_time']=time.time();g['index']=0;g['deck']=[];g['bank_version']=BANK_VERSION;g['events_deck']=[];g['last']=None;g['last_event']=False;g['reader_override']=None;draw();return snapshot(token,admin)
         if act=='next':
             require(g['phase']=='playing' and g['current'] is not None,'Игра не идёт')
             require(admin or (mine is not None and mine['id']==g['current']['reader']),'Переключить может только читающий.')
+            if g['settings'].get('mode')=='challenge':
+                require(time.time()>=g.get('challenge_deadline',0) or len(g.get('challenge_votes',{}))==len(g['players']), 'Дождитесь ответов всех игроков или окончания 5 секунд')
+                for p in g['players']:g.setdefault('challenge_votes',{}).setdefault(p['id'],'yes')
             card=g['current']
             if card['event']:
                 if ('Смена власти' in card['title'] or 'Power Shift' in card['title']):g['reader_override']=(g['index']+2)%len(g['players'])

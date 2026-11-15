@@ -1974,5 +1974,1811 @@
       "f": "pretended to agree with something I did not believe.",
       "variant": 0
     }
+  ],
+  "Свадьбы и семейные праздники": [
+    {
+      "m": "caught the bouquet at a wedding without wanting to get married",
+      "f": "caught the bouquet at a wedding without wanting to get married",
+      "variant": 0,
+      "group": 0
+    },
+    {
+      "m": "hid from relatives during a family dinner",
+      "f": "hid from relatives during a family dinner",
+      "variant": 0,
+      "group": 1
+    },
+    {
+      "m": "forgot the groom's name at somebody else's wedding",
+      "f": "forgot the groom's name at somebody else's wedding",
+      "variant": 0,
+      "group": 2
+    },
+    {
+      "m": "wore the same color as the newlyweds at a wedding",
+      "f": "wore the same color as the newlyweds at a wedding",
+      "variant": 0,
+      "group": 3
+    },
+    {
+      "m": "mixed up an anniversary date",
+      "f": "mixed up an anniversary date",
+      "variant": 0,
+      "group": 4
+    },
+    {
+      "m": "gave someone a present identical to another guest's",
+      "f": "gave someone a present identical to another guest's",
+      "variant": 0,
+      "group": 5
+    },
+    {
+      "m": "regifted a present without telling anyone",
+      "f": "regifted a present without telling anyone",
+      "variant": 0,
+      "group": 6
+    },
+    {
+      "m": "pretended I had a gift while still needing to buy it",
+      "f": "pretended I had a gift while still needing to buy it",
+      "variant": 0,
+      "group": 7
+    },
+    {
+      "m": "left a party without saying goodbye to the hosts",
+      "f": "left a party without saying goodbye to the hosts",
+      "variant": 0,
+      "group": 8
+    },
+    {
+      "m": "signed a greeting card with the wrong name",
+      "f": "signed a greeting card with the wrong name",
+      "variant": 0,
+      "group": 9
+    },
+    {
+      "m": "cried at the wedding of people I barely knew",
+      "f": "cried at the wedding of people I barely knew",
+      "variant": 0,
+      "group": 10
+    },
+    {
+      "m": "danced with someone whose name I never learned",
+      "f": "danced with someone whose name I never learned",
+      "variant": 0,
+      "group": 11
+    },
+    {
+      "m": "promised a toast and escaped before my turn",
+      "f": "promised a toast and escaped before my turn",
+      "variant": 0,
+      "group": 12
+    },
+    {
+      "m": "turned a toast into an embarrassing story",
+      "f": "turned a toast into an embarrassing story",
+      "variant": 0,
+      "group": 13
+    },
+    {
+      "m": "mistook the bride for her sister",
+      "f": "mistook the bride for her sister",
+      "variant": 0,
+      "group": 14
+    },
+    {
+      "m": "mistook a wedding rehearsal for the actual ceremony",
+      "f": "mistook a wedding rehearsal for the actual ceremony",
+      "variant": 0,
+      "group": 15
+    },
+    {
+      "m": "arrived late to my own birthday party",
+      "f": "arrived late to my own birthday party",
+      "variant": 0,
+      "group": 16
+    },
+    {
+      "m": "pretended to be surprised at a surprise party",
+      "f": "pretended to be surprised at a surprise party",
+      "variant": 0,
+      "group": 17
+    },
+    {
+      "m": "accidentally spoiled a surprise party I knew about",
+      "f": "accidentally spoiled a surprise party I knew about",
+      "variant": 0,
+      "group": 18
+    },
+    {
+      "m": "pretended to love a gift I wanted to return",
+      "f": "pretended to love a gift I wanted to return",
+      "variant": 0,
+      "group": 19
+    },
+    {
+      "m": "forgot to buy candles for a birthday cake",
+      "f": "forgot to buy candles for a birthday cake",
+      "variant": 0,
+      "group": 20
+    },
+    {
+      "m": "blew out the candles on someone else's cake",
+      "f": "blew out the candles on someone else's cake",
+      "variant": 0,
+      "group": 21
+    },
+    {
+      "m": "took the biggest slice of cake before everyone else",
+      "f": "took the biggest slice of cake before everyone else",
+      "variant": 0,
+      "group": 22
+    },
+    {
+      "m": "accidentally dropped a celebration cake",
+      "f": "accidentally dropped a celebration cake",
+      "variant": 0,
+      "group": 23
+    },
+    {
+      "m": "ate food that was meant for the guests",
+      "f": "ate food that was meant for the guests",
+      "variant": 0,
+      "group": 24
+    },
+    {
+      "m": "hid how much I ate at a buffet",
+      "f": "hid how much I ate at a buffet",
+      "variant": 0,
+      "group": 25
+    },
+    {
+      "m": "went to a family gathering mainly for the food",
+      "f": "went to a family gathering mainly for the food",
+      "variant": 0,
+      "group": 26
+    },
+    {
+      "m": "tried to sneak out of a family dinner and got caught",
+      "f": "tried to sneak out of a family dinner and got caught",
+      "variant": 0,
+      "group": 27
+    },
+    {
+      "m": "brought an uninvited person to a party",
+      "f": "brought an uninvited person to a party",
+      "variant": 0,
+      "group": 28
+    },
+    {
+      "m": "confused the relationships between distant relatives",
+      "f": "confused the relationships between distant relatives",
+      "variant": 0,
+      "group": 29
+    },
+    {
+      "m": "called a relative the wrong name all evening",
+      "f": "called a relative the wrong name all evening",
+      "variant": 0,
+      "group": 30
+    },
+    {
+      "m": "pretended to enjoy endless family stories",
+      "f": "pretended to enjoy endless family stories",
+      "variant": 0,
+      "group": 31
+    },
+    {
+      "m": "avoided a family photo because I didn't want to be in it",
+      "f": "avoided a family photo because I didn't want to be in it",
+      "variant": 0,
+      "group": 32
+    },
+    {
+      "m": "posed for a family photo just to leave sooner",
+      "f": "posed for a family photo just to leave sooner",
+      "variant": 0,
+      "group": 33
+    },
+    {
+      "m": "ruined a group photo with a ridiculous expression",
+      "f": "ruined a group photo with a ridiculous expression",
+      "variant": 0,
+      "group": 34
+    },
+    {
+      "m": "posted a family photo without asking everyone",
+      "f": "posted a family photo without asking everyone",
+      "variant": 0,
+      "group": 35
+    },
+    {
+      "m": "forgot to wish someone close to me a happy birthday",
+      "f": "forgot to wish someone close to me a happy birthday",
+      "variant": 0,
+      "group": 36
+    },
+    {
+      "m": "wished someone happy birthday on the wrong day",
+      "f": "wished someone happy birthday on the wrong day",
+      "variant": 0,
+      "group": 37
+    },
+    {
+      "m": "sent holiday wishes to an ex and regretted it",
+      "f": "sent holiday wishes to an ex and regretted it",
+      "variant": 0,
+      "group": 38
+    },
+    {
+      "m": "got questions about marriage instead of birthday wishes",
+      "f": "got questions about marriage instead of birthday wishes",
+      "variant": 0,
+      "group": 39
+    },
+    {
+      "m": "argued with a relative about where to sit",
+      "f": "argued with a relative about where to sit",
+      "variant": 0,
+      "group": 40
+    },
+    {
+      "m": "argued over the music at a family party",
+      "f": "argued over the music at a family party",
+      "variant": 0,
+      "group": 41
+    },
+    {
+      "m": "secretly changed the playlist at someone else's party",
+      "f": "secretly changed the playlist at someone else's party",
+      "variant": 0,
+      "group": 42
+    },
+    {
+      "m": "requested a song nobody wanted to hear",
+      "f": "requested a song nobody wanted to hear",
+      "variant": 0,
+      "group": 43
+    },
+    {
+      "m": "sang along to a wedding song without knowing the lyrics",
+      "f": "sang along to a wedding song without knowing the lyrics",
+      "variant": 0,
+      "group": 44
+    },
+    {
+      "m": "grabbed the microphone at a party and refused to give it back",
+      "f": "grabbed the microphone at a party and refused to give it back",
+      "variant": 0,
+      "group": 45
+    },
+    {
+      "m": "performed an act at a party and regretted it later",
+      "f": "performed an act at a party and regretted it later",
+      "variant": 0,
+      "group": 46
+    },
+    {
+      "m": "mixed up wedding vows during a rehearsal",
+      "f": "mixed up wedding vows during a rehearsal",
+      "variant": 0,
+      "group": 47
+    },
+    {
+      "m": "mentioned an ex during someone else's wedding toast",
+      "f": "mentioned an ex during someone else's wedding toast",
+      "variant": 0,
+      "group": 48
+    },
+    {
+      "m": "found out a couple broke up during their joint party",
+      "f": "found out a couple broke up during their joint party",
+      "variant": 0,
+      "group": 49
+    },
+    {
+      "m": "pretended to date a friend to avoid family questions",
+      "f": "pretended to date a friend to avoid family questions",
+      "variant": 0,
+      "group": 50
+    },
+    {
+      "m": "went to a party with someone I'd argued with the day before",
+      "f": "went to a party with someone I'd argued with the day before",
+      "variant": 0,
+      "group": 51
+    },
+    {
+      "m": "flirted with a guest across the wedding table",
+      "f": "flirted with a guest across the wedding table",
+      "variant": 0,
+      "group": 52
+    },
+    {
+      "m": "tried to find out whether the party host was single",
+      "f": "tried to find out whether the party host was single",
+      "variant": 0,
+      "group": 53
+    },
+    {
+      "m": "exchanged numbers with a stranger at a family celebration",
+      "f": "exchanged numbers with a stranger at a family celebration",
+      "variant": 0,
+      "group": 54
+    },
+    {
+      "m": "kissed someone at a party hoping nobody would notice",
+      "f": "kissed someone at a party hoping nobody would notice",
+      "variant": 0,
+      "group": 55
+    },
+    {
+      "m": "appeared in a wedding video at the worst possible moment",
+      "f": "appeared in a wedding video at the worst possible moment",
+      "variant": 0,
+      "group": 56
+    },
+    {
+      "m": "hid from someone I used to date at a party",
+      "f": "hid from someone I used to date at a party",
+      "variant": 0,
+      "group": 57
+    },
+    {
+      "m": "arrived at a party without knowing the dress code",
+      "f": "arrived at a party without knowing the dress code",
+      "variant": 0,
+      "group": 58
+    },
+    {
+      "m": "dressed far too formally for a casual gathering",
+      "f": "dressed far too formally for a casual gathering",
+      "variant": 0,
+      "group": 59
+    },
+    {
+      "m": "wore sportswear to a formal celebration",
+      "f": "wore sportswear to a formal celebration",
+      "variant": 0,
+      "group": 60
+    },
+    {
+      "m": "changed shoes halfway through a party because my feet hurt",
+      "f": "changed shoes halfway through a party because my feet hurt",
+      "variant": 0,
+      "group": 61
+    },
+    {
+      "m": "danced barefoot at a family celebration",
+      "f": "danced barefoot at a family celebration",
+      "variant": 0,
+      "group": 62
+    },
+    {
+      "m": "lost a piece of jewelry while dancing",
+      "f": "lost a piece of jewelry while dancing",
+      "variant": 0,
+      "group": 63
+    },
+    {
+      "m": "broke a decoration while taking a selfie",
+      "f": "broke a decoration while taking a selfie",
+      "variant": 0,
+      "group": 64
+    },
+    {
+      "m": "set off a party popper too early",
+      "f": "set off a party popper too early",
+      "variant": 0,
+      "group": 65
+    },
+    {
+      "m": "got scared by fireworks I set off myself",
+      "f": "got scared by fireworks I set off myself",
+      "variant": 0,
+      "group": 66
+    },
+    {
+      "m": "launched confetti in a place that took hours to clean",
+      "f": "launched confetti in a place that took hours to clean",
+      "variant": 0,
+      "group": 67
+    },
+    {
+      "m": "popped a balloon right in front of my face while blowing it up",
+      "f": "popped a balloon right in front of my face while blowing it up",
+      "variant": 0,
+      "group": 68
+    },
+    {
+      "m": "decorated the house for a party at the very last minute",
+      "f": "decorated the house for a party at the very last minute",
+      "variant": 0,
+      "group": 69
+    },
+    {
+      "m": "forgot a restaurant reservation for a celebration",
+      "f": "forgot a restaurant reservation for a celebration",
+      "variant": 0,
+      "group": 70
+    },
+    {
+      "m": "ordered too little food for a party",
+      "f": "ordered too little food for a party",
+      "variant": 0,
+      "group": 71
+    },
+    {
+      "m": "ordered so much party food that I ate leftovers for days",
+      "f": "ordered so much party food that I ate leftovers for days",
+      "variant": 0,
+      "group": 72
+    },
+    {
+      "m": "got confused about my share of a party bill",
+      "f": "got confused about my share of a party bill",
+      "variant": 0,
+      "group": 73
+    },
+    {
+      "m": "argued about splitting a birthday dinner bill",
+      "f": "argued about splitting a birthday dinner bill",
+      "variant": 0,
+      "group": 74
+    },
+    {
+      "m": "paid for a guest I barely knew",
+      "f": "paid for a guest I barely knew",
+      "variant": 0,
+      "group": 75
+    },
+    {
+      "m": "organized a party game nobody understood",
+      "f": "organized a party game nobody understood",
+      "variant": 0,
+      "group": 76
+    },
+    {
+      "m": "cheated in a family board game to win",
+      "f": "cheated in a family board game to win",
+      "variant": 0,
+      "group": 77
+    },
+    {
+      "m": "deliberately lost a party game to a child",
+      "f": "deliberately lost a party game to a child",
+      "variant": 0,
+      "group": 78
+    },
+    {
+      "m": "lost a bet at a party and had to do something ridiculous",
+      "f": "lost a bet at a party and had to do something ridiculous",
+      "variant": 0,
+      "group": 79
+    },
+    {
+      "m": "hid a contest prize so nobody else could find it",
+      "f": "hid a contest prize so nobody else could find it",
+      "variant": 0,
+      "group": 80
+    },
+    {
+      "m": "received a gift clearly meant for somebody else",
+      "f": "received a gift clearly meant for somebody else",
+      "variant": 0,
+      "group": 81
+    },
+    {
+      "m": "gave a present with a security sticker still attached",
+      "f": "gave a present with a security sticker still attached",
+      "variant": 0,
+      "group": 82
+    },
+    {
+      "m": "mixed up gift bags at the last minute",
+      "f": "mixed up gift bags at the last minute",
+      "variant": 0,
+      "group": 83
+    },
+    {
+      "m": "forgot which gift I had brought to a gift exchange",
+      "f": "forgot which gift I had brought to a gift exchange",
+      "variant": 0,
+      "group": 84
+    },
+    {
+      "m": "opened someone else's present by mistake",
+      "f": "opened someone else's present by mistake",
+      "variant": 0,
+      "group": 85
+    },
+    {
+      "m": "showed up at the wrong anniversary celebration",
+      "f": "showed up at the wrong anniversary celebration",
+      "variant": 0,
+      "group": 86
+    },
+    {
+      "m": "walked into the wrong banquet hall",
+      "f": "walked into the wrong banquet hall",
+      "variant": 0,
+      "group": 87
+    },
+    {
+      "m": "congratulated a stranger thinking they were the birthday guest",
+      "f": "congratulated a stranger thinking they were the birthday guest",
+      "variant": 0,
+      "group": 88
+    },
+    {
+      "m": "stayed at a party much longer than intended",
+      "f": "stayed at a party much longer than intended",
+      "variant": 0,
+      "group": 89
+    },
+    {
+      "m": "left a party before everyone else because I was tired",
+      "f": "left a party before everyone else because I was tired",
+      "variant": 0,
+      "group": 90
+    },
+    {
+      "m": "promised to help clean up after a party and vanished",
+      "f": "promised to help clean up after a party and vanished",
+      "variant": 0,
+      "group": 91
+    },
+    {
+      "m": "accidentally took someone else's coat home after a party",
+      "f": "accidentally took someone else's coat home after a party",
+      "variant": 0,
+      "group": 92
+    },
+    {
+      "m": "found an unexplained souvenir in my pocket after a party",
+      "f": "found an unexplained souvenir in my pocket after a party",
+      "variant": 0,
+      "group": 93
+    },
+    {
+      "m": "woke up wearing someone else's party hat",
+      "f": "woke up wearing someone else's party hat",
+      "variant": 0,
+      "group": 94
+    },
+    {
+      "m": "kept an embarrassing party video as a souvenir",
+      "f": "kept an embarrassing party video as a souvenir",
+      "variant": 0,
+      "group": 95
+    },
+    {
+      "m": "asked someone to delete a video of my terrible dancing",
+      "f": "asked someone to delete a video of my terrible dancing",
+      "variant": 0,
+      "group": 96
+    },
+    {
+      "m": "looked through wedding photos only for the funny pictures",
+      "f": "looked through wedding photos only for the funny pictures",
+      "variant": 0,
+      "group": 97
+    },
+    {
+      "m": "swore I'd never organize a party like that again",
+      "f": "swore I'd never organize a party like that again",
+      "variant": 0,
+      "group": 98
+    },
+    {
+      "m": "forgot to arrange a photographer and picked a random guest",
+      "f": "forgot to arrange a photographer and picked a random guest",
+      "variant": 0,
+      "group": 99
+    }
+  ],
+  "Дорога и транспорт": [
+    {
+      "m": "got on the wrong bus and noticed several stops later",
+      "f": "got on the wrong bus and noticed several stops later",
+      "variant": 0,
+      "group": 0
+    },
+    {
+      "m": "boarded a subway train going the wrong way",
+      "f": "boarded a subway train going the wrong way",
+      "variant": 0,
+      "group": 1
+    },
+    {
+      "m": "missed my stop because I was staring at my phone",
+      "f": "missed my stop because I was staring at my phone",
+      "variant": 0,
+      "group": 2
+    },
+    {
+      "m": "fell asleep on public transport and woke up at the last stop",
+      "f": "fell asleep on public transport and woke up at the last stop",
+      "variant": 0,
+      "group": 3
+    },
+    {
+      "m": "ran after a bus that still left without me",
+      "f": "ran after a bus that still left without me",
+      "variant": 0,
+      "group": 4
+    },
+    {
+      "m": "waved at a bus driver whose bus wasn't even on my route",
+      "f": "waved at a bus driver whose bus wasn't even on my route",
+      "variant": 0,
+      "group": 5
+    },
+    {
+      "m": "got on a bus and briefly forgot where I was going",
+      "f": "got on a bus and briefly forgot where I was going",
+      "variant": 0,
+      "group": 6
+    },
+    {
+      "m": "mixed up train platforms at a station",
+      "f": "mixed up train platforms at a station",
+      "variant": 0,
+      "group": 7
+    },
+    {
+      "m": "nearly missed a train because I stopped for coffee",
+      "f": "nearly missed a train because I stopped for coffee",
+      "variant": 0,
+      "group": 8
+    },
+    {
+      "m": "reached a train at the last second without my ticket ready",
+      "f": "reached a train at the last second without my ticket ready",
+      "variant": 0,
+      "group": 9
+    },
+    {
+      "m": "sat in the wrong train seat and argued with the ticket holder",
+      "f": "sat in the wrong train seat and argued with the ticket holder",
+      "variant": 0,
+      "group": 10
+    },
+    {
+      "m": "tried to open a train door from the wrong side",
+      "f": "tried to open a train door from the wrong side",
+      "variant": 0,
+      "group": 11
+    },
+    {
+      "m": "accidentally woke up a stranger on public transport",
+      "f": "accidentally woke up a stranger on public transport",
+      "variant": 0,
+      "group": 12
+    },
+    {
+      "m": "pretended to sleep to avoid talking to a seatmate",
+      "f": "pretended to sleep to avoid talking to a seatmate",
+      "variant": 0,
+      "group": 13
+    },
+    {
+      "m": "overheard a bizarre conversation in a minibus",
+      "f": "overheard a bizarre conversation in a minibus",
+      "variant": 0,
+      "group": 14
+    },
+    {
+      "m": "laughed at a stranger's conversation loudly enough to get caught",
+      "f": "laughed at a stranger's conversation loudly enough to get caught",
+      "variant": 0,
+      "group": 15
+    },
+    {
+      "m": "tried to read someone's messages over their shoulder",
+      "f": "tried to read someone's messages over their shoulder",
+      "variant": 0,
+      "group": 16
+    },
+    {
+      "m": "played music without headphones and felt embarrassed",
+      "f": "played music without headphones and felt embarrassed",
+      "variant": 0,
+      "group": 17
+    },
+    {
+      "m": "dropped an earbud between bus seats",
+      "f": "dropped an earbud between bus seats",
+      "variant": 0,
+      "group": 18
+    },
+    {
+      "m": "lost my travel card right before the ticket gate",
+      "f": "lost my travel card right before the ticket gate",
+      "variant": 0,
+      "group": 19
+    },
+    {
+      "m": "tapped the wrong side of my card against a ticket gate",
+      "f": "tapped the wrong side of my card against a ticket gate",
+      "variant": 0,
+      "group": 20
+    },
+    {
+      "m": "accidentally paid a stranger's fare",
+      "f": "accidentally paid a stranger's fare",
+      "variant": 0,
+      "group": 21
+    },
+    {
+      "m": "argued with a ticket vending machine",
+      "f": "argued with a ticket vending machine",
+      "variant": 0,
+      "group": 22
+    },
+    {
+      "m": "took the wrong subway exit and ended up on another street",
+      "f": "took the wrong subway exit and ended up on another street",
+      "variant": 0,
+      "group": 23
+    },
+    {
+      "m": "went around the same block several times",
+      "f": "went around the same block several times",
+      "variant": 0,
+      "group": 24
+    },
+    {
+      "m": "guided friends in the wrong direction using a map app",
+      "f": "guided friends in the wrong direction using a map app",
+      "variant": 0,
+      "group": 25
+    },
+    {
+      "m": "trusted navigation more than obvious road signs",
+      "f": "trusted navigation more than obvious road signs",
+      "variant": 0,
+      "group": 26
+    },
+    {
+      "m": "turned the wrong way because of navigation instructions",
+      "f": "turned the wrong way because of navigation instructions",
+      "variant": 0,
+      "group": 27
+    },
+    {
+      "m": "asked for directions from somebody who was also lost",
+      "f": "asked for directions from somebody who was also lost",
+      "variant": 0,
+      "group": 28
+    },
+    {
+      "m": "pretended I knew the way when I was completely lost",
+      "f": "pretended I knew the way when I was completely lost",
+      "variant": 0,
+      "group": 29
+    },
+    {
+      "m": "mixed up left and right while giving a driver directions",
+      "f": "mixed up left and right while giving a driver directions",
+      "variant": 0,
+      "group": 30
+    },
+    {
+      "m": "tried to unlock a stranger's car in a parking lot",
+      "f": "tried to unlock a stranger's car in a parking lot",
+      "variant": 0,
+      "group": 31
+    },
+    {
+      "m": "got into the wrong taxi and realized too late",
+      "f": "got into the wrong taxi and realized too late",
+      "variant": 0,
+      "group": 32
+    },
+    {
+      "m": "looked for my taxi while standing right next to it",
+      "f": "looked for my taxi while standing right next to it",
+      "variant": 0,
+      "group": 33
+    },
+    {
+      "m": "ordered a taxi to the wrong address",
+      "f": "ordered a taxi to the wrong address",
+      "variant": 0,
+      "group": 34
+    },
+    {
+      "m": "set my taxi pickup point so far away I had to walk",
+      "f": "set my taxi pickup point so far away I had to walk",
+      "variant": 0,
+      "group": 35
+    },
+    {
+      "m": "used hand gestures through a window to explain a pickup spot",
+      "f": "used hand gestures through a window to explain a pickup spot",
+      "variant": 0,
+      "group": 36
+    },
+    {
+      "m": "talked to my taxi driver the whole way despite wanting silence",
+      "f": "talked to my taxi driver the whole way despite wanting silence",
+      "variant": 0,
+      "group": 37
+    },
+    {
+      "m": "told a taxi driver far too much personal information",
+      "f": "told a taxi driver far too much personal information",
+      "variant": 0,
+      "group": 38
+    },
+    {
+      "m": "pretended to be on a call to avoid small talk in a taxi",
+      "f": "pretended to be on a call to avoid small talk in a taxi",
+      "variant": 0,
+      "group": 39
+    },
+    {
+      "m": "accidentally gave a ride the wrong star rating",
+      "f": "accidentally gave a ride the wrong star rating",
+      "variant": 0,
+      "group": 40
+    },
+    {
+      "m": "left something in a taxi and noticed only at home",
+      "f": "left something in a taxi and noticed only at home",
+      "variant": 0,
+      "group": 41
+    },
+    {
+      "m": "traveled across town to retrieve a forgotten phone",
+      "f": "traveled across town to retrieve a forgotten phone",
+      "variant": 0,
+      "group": 42
+    },
+    {
+      "m": "dropped my ticket right before an inspection",
+      "f": "dropped my ticket right before an inspection",
+      "variant": 0,
+      "group": 43
+    },
+    {
+      "m": "pulled a ticket out of my pocket along with a pile of trash",
+      "f": "pulled a ticket out of my pocket along with a pile of trash",
+      "variant": 0,
+      "group": 44
+    },
+    {
+      "m": "turned on my phone flashlight too brightly on a dark bus",
+      "f": "turned on my phone flashlight too brightly on a dark bus",
+      "variant": 0,
+      "group": 45
+    },
+    {
+      "m": "tried to open a noisy snack bag quietly on a bus",
+      "f": "tried to open a noisy snack bag quietly on a bus",
+      "variant": 0,
+      "group": 46
+    },
+    {
+      "m": "ate something with a very strong smell on a train",
+      "f": "ate something with a very strong smell on a train",
+      "variant": 0,
+      "group": 47
+    },
+    {
+      "m": "packed enough travel food for a week-long journey",
+      "f": "packed enough travel food for a week-long journey",
+      "variant": 0,
+      "group": 48
+    },
+    {
+      "m": "forgot to bring water on a long journey",
+      "f": "forgot to bring water on a long journey",
+      "variant": 0,
+      "group": 49
+    },
+    {
+      "m": "bought something during a trip that was already in my bag",
+      "f": "bought something during a trip that was already in my bag",
+      "variant": 0,
+      "group": 50
+    },
+    {
+      "m": "mixed up suitcases at a train station",
+      "f": "mixed up suitcases at a train station",
+      "variant": 0,
+      "group": 51
+    },
+    {
+      "m": "carried an absurdly heavy bag instead of a suitcase",
+      "f": "carried an absurdly heavy bag instead of a suitcase",
+      "variant": 0,
+      "group": 52
+    },
+    {
+      "m": "got stuck in a narrow aisle with a huge suitcase",
+      "f": "got stuck in a narrow aisle with a huge suitcase",
+      "variant": 0,
+      "group": 53
+    },
+    {
+      "m": "tried to cram an oversized bag onto an overhead rack",
+      "f": "tried to cram an oversized bag onto an overhead rack",
+      "variant": 0,
+      "group": 54
+    },
+    {
+      "m": "dropped my bag while lifting it onto a luggage rack",
+      "f": "dropped my bag while lifting it onto a luggage rack",
+      "variant": 0,
+      "group": 55
+    },
+    {
+      "m": "argued with a friend over the window seat",
+      "f": "argued with a friend over the window seat",
+      "variant": 0,
+      "group": 56
+    },
+    {
+      "m": "swapped seats on a trip and immediately regretted it",
+      "f": "swapped seats on a trip and immediately regretted it",
+      "variant": 0,
+      "group": 57
+    },
+    {
+      "m": "picked a seat right beside the toilet without realizing it",
+      "f": "picked a seat right beside the toilet without realizing it",
+      "variant": 0,
+      "group": 58
+    },
+    {
+      "m": "chose the most inconvenient carriage on a long train",
+      "f": "chose the most inconvenient carriage on a long train",
+      "variant": 0,
+      "group": 59
+    },
+    {
+      "m": "sat facing backward on a journey and felt sick",
+      "f": "sat facing backward on a journey and felt sick",
+      "variant": 0,
+      "group": 60
+    },
+    {
+      "m": "photographed a funny sticker on a stranger's car",
+      "f": "photographed a funny sticker on a stranger's car",
+      "variant": 0,
+      "group": 61
+    },
+    {
+      "m": "laughed at my own reflection in a night bus window",
+      "f": "laughed at my own reflection in a night bus window",
+      "variant": 0,
+      "group": 62
+    },
+    {
+      "m": "sang so loudly in a car that people outside could hear",
+      "f": "sang so loudly in a car that people outside could hear",
+      "variant": 0,
+      "group": 63
+    },
+    {
+      "m": "started an argument about music in a car",
+      "f": "started an argument about music in a car",
+      "variant": 0,
+      "group": 64
+    },
+    {
+      "m": "changed the radio station without asking the driver",
+      "f": "changed the radio station without asking the driver",
+      "variant": 0,
+      "group": 65
+    },
+    {
+      "m": "used GPS navigation for an absurdly short distance",
+      "f": "used GPS navigation for an absurdly short distance",
+      "variant": 0,
+      "group": 66
+    },
+    {
+      "m": "got lost in a mall trying to reach the parking lot",
+      "f": "got lost in a mall trying to reach the parking lot",
+      "variant": 0,
+      "group": 67
+    },
+    {
+      "m": "forgot which level I had parked on",
+      "f": "forgot which level I had parked on",
+      "variant": 0,
+      "group": 68
+    },
+    {
+      "m": "searched for a parked car by making its alarm beep",
+      "f": "searched for a parked car by making its alarm beep",
+      "variant": 0,
+      "group": 69
+    },
+    {
+      "m": "tried to open a car trunk while the car was still locked",
+      "f": "tried to open a car trunk while the car was still locked",
+      "variant": 0,
+      "group": 70
+    },
+    {
+      "m": "forgot to close a car window before rain",
+      "f": "forgot to close a car window before rain",
+      "variant": 0,
+      "group": 71
+    },
+    {
+      "m": "tried to get out of a car with my seat belt still on",
+      "f": "tried to get out of a car with my seat belt still on",
+      "variant": 0,
+      "group": 72
+    },
+    {
+      "m": "turned on the windshield wipers instead of the turn signal",
+      "f": "turned on the windshield wipers instead of the turn signal",
+      "variant": 0,
+      "group": 73
+    },
+    {
+      "m": "honked at a driver I thought I knew and then realized I didn't",
+      "f": "honked at a driver I thought I knew and then realized I didn't",
+      "variant": 0,
+      "group": 74
+    },
+    {
+      "m": "tried to park while a whole group watched",
+      "f": "tried to park while a whole group watched",
+      "variant": 0,
+      "group": 75
+    },
+    {
+      "m": "asked a passenger to get out and guide my parking",
+      "f": "asked a passenger to get out and guide my parking",
+      "variant": 0,
+      "group": 76
+    },
+    {
+      "m": "called myself a great navigator and immediately got lost",
+      "f": "called myself a great navigator and immediately got lost",
+      "variant": 0,
+      "group": 77
+    },
+    {
+      "m": "mixed up gate numbers at an airport",
+      "f": "mixed up gate numbers at an airport",
+      "variant": 0,
+      "group": 78
+    },
+    {
+      "m": "ran across an airport for a boarding gate that was closing",
+      "f": "ran across an airport for a boarding gate that was closing",
+      "variant": 0,
+      "group": 79
+    },
+    {
+      "m": "went to the wrong airport terminal and had to rush back",
+      "f": "went to the wrong airport terminal and had to rush back",
+      "variant": 0,
+      "group": 80
+    },
+    {
+      "m": "forgot about a water bottle in my bag at airport security",
+      "f": "forgot about a water bottle in my bag at airport security",
+      "variant": 0,
+      "group": 81
+    },
+    {
+      "m": "forgot to remove my watch before airport security",
+      "f": "forgot to remove my watch before airport security",
+      "variant": 0,
+      "group": 82
+    },
+    {
+      "m": "searched for my passport while holding it",
+      "f": "searched for my passport while holding it",
+      "variant": 0,
+      "group": 83
+    },
+    {
+      "m": "repacked my bag in front of an entire airport queue",
+      "f": "repacked my bag in front of an entire airport queue",
+      "variant": 0,
+      "group": 84
+    },
+    {
+      "m": "couldn't open my suitcase after landing",
+      "f": "couldn't open my suitcase after landing",
+      "variant": 0,
+      "group": 85
+    },
+    {
+      "m": "greeted someone at an airport with a ridiculous sign",
+      "f": "greeted someone at an airport with a ridiculous sign",
+      "variant": 0,
+      "group": 86
+    },
+    {
+      "m": "found out my flight was delayed at the gate",
+      "f": "found out my flight was delayed at the gate",
+      "variant": 0,
+      "group": 87
+    },
+    {
+      "m": "slept in an airport in a ridiculous position",
+      "f": "slept in an airport in a ridiculous position",
+      "variant": 0,
+      "group": 88
+    },
+    {
+      "m": "felt completely disoriented after an overnight flight",
+      "f": "felt completely disoriented after an overnight flight",
+      "variant": 0,
+      "group": 89
+    },
+    {
+      "m": "clapped along with other passengers after landing",
+      "f": "clapped along with other passengers after landing",
+      "variant": 0,
+      "group": 90
+    },
+    {
+      "m": "tried to book a train ticket for a date in the past",
+      "f": "tried to book a train ticket for a date in the past",
+      "variant": 0,
+      "group": 91
+    },
+    {
+      "m": "mixed up time zones while planning a journey",
+      "f": "mixed up time zones while planning a journey",
+      "variant": 0,
+      "group": 92
+    },
+    {
+      "m": "checked the departure time on an outdated ticket",
+      "f": "checked the departure time on an outdated ticket",
+      "variant": 0,
+      "group": 93
+    },
+    {
+      "m": "saved a ticket on my phone and couldn't find it offline",
+      "f": "saved a ticket on my phone and couldn't find it offline",
+      "variant": 0,
+      "group": 94
+    },
+    {
+      "m": "sent friends the wrong meeting location",
+      "f": "sent friends the wrong meeting location",
+      "variant": 0,
+      "group": 95
+    },
+    {
+      "m": "waited for friends at the wrong train station entrance",
+      "f": "waited for friends at the wrong train station entrance",
+      "variant": 0,
+      "group": 96
+    },
+    {
+      "m": "agreed to a long trip without knowing where we were going",
+      "f": "agreed to a long trip without knowing where we were going",
+      "variant": 0,
+      "group": 97
+    },
+    {
+      "m": "missed a beautiful view out the window because I was on my phone",
+      "f": "missed a beautiful view out the window because I was on my phone",
+      "variant": 0,
+      "group": 98
+    },
+    {
+      "m": "booked the last train carriage and regretted the long walk",
+      "f": "booked the last train carriage and regretted the long walk",
+      "variant": 0,
+      "group": 99
+    }
+  ],
+  "Отели и арендованное жильё": [
+    {
+      "m": "booked accommodation for the wrong dates",
+      "f": "booked accommodation for the wrong dates",
+      "variant": 0,
+      "group": 0
+    },
+    {
+      "m": "arrived at a hotel before check-in and sat with my bags",
+      "f": "arrived at a hotel before check-in and sat with my bags",
+      "variant": 0,
+      "group": 1
+    },
+    {
+      "m": "arrived at a hotel and realized I'd gone to the wrong address",
+      "f": "arrived at a hotel and realized I'd gone to the wrong address",
+      "variant": 0,
+      "group": 2
+    },
+    {
+      "m": "forgot which floor my hotel room was on",
+      "f": "forgot which floor my hotel room was on",
+      "variant": 0,
+      "group": 3
+    },
+    {
+      "m": "tried to open someone else's hotel room with my key card",
+      "f": "tried to open someone else's hotel room with my key card",
+      "variant": 0,
+      "group": 4
+    },
+    {
+      "m": "left my hotel key card inside the room",
+      "f": "left my hotel key card inside the room",
+      "variant": 0,
+      "group": 5
+    },
+    {
+      "m": "dropped my room key in the elevator",
+      "f": "dropped my room key in the elevator",
+      "variant": 0,
+      "group": 6
+    },
+    {
+      "m": "checked my hotel room door five times before leaving",
+      "f": "checked my hotel room door five times before leaving",
+      "variant": 0,
+      "group": 7
+    },
+    {
+      "m": "was afraid to touch the minibar because of the prices",
+      "f": "was afraid to touch the minibar because of the prices",
+      "variant": 0,
+      "group": 8
+    },
+    {
+      "m": "ate something from the minibar and regretted the bill",
+      "f": "ate something from the minibar and regretted the bill",
+      "variant": 0,
+      "group": 9
+    },
+    {
+      "m": "spent several minutes searching for a hotel light switch",
+      "f": "spent several minutes searching for a hotel light switch",
+      "variant": 0,
+      "group": 10
+    },
+    {
+      "m": "mistook a light switch for a call button",
+      "f": "mistook a light switch for a call button",
+      "variant": 0,
+      "group": 11
+    },
+    {
+      "m": "accidentally left the Do Not Disturb sign on all day",
+      "f": "accidentally left the Do Not Disturb sign on all day",
+      "variant": 0,
+      "group": 12
+    },
+    {
+      "m": "opened a hotel door to staff while still in pajamas",
+      "f": "opened a hotel door to staff while still in pajamas",
+      "variant": 0,
+      "group": 13
+    },
+    {
+      "m": "pretended I knew how to operate an expensive shower",
+      "f": "pretended I knew how to operate an expensive shower",
+      "variant": 0,
+      "group": 14
+    },
+    {
+      "m": "couldn't figure out the taps in an unfamiliar bathroom",
+      "f": "couldn't figure out the taps in an unfamiliar bathroom",
+      "variant": 0,
+      "group": 15
+    },
+    {
+      "m": "mixed up shampoo and body wash in identical bottles",
+      "f": "mixed up shampoo and body wash in identical bottles",
+      "variant": 0,
+      "group": 16
+    },
+    {
+      "m": "forgot to grab a towel before taking a shower",
+      "f": "forgot to grab a towel before taking a shower",
+      "variant": 0,
+      "group": 17
+    },
+    {
+      "m": "searched for a hair dryer and found it somewhere absurd",
+      "f": "searched for a hair dryer and found it somewhere absurd",
+      "variant": 0,
+      "group": 18
+    },
+    {
+      "m": "tried to open motorized curtains by hand",
+      "f": "tried to open motorized curtains by hand",
+      "variant": 0,
+      "group": 19
+    },
+    {
+      "m": "talked to a hotel room voice assistant",
+      "f": "talked to a hotel room voice assistant",
+      "variant": 0,
+      "group": 20
+    },
+    {
+      "m": "couldn't turn on a hotel TV with three remote controls",
+      "f": "couldn't turn on a hotel TV with three remote controls",
+      "variant": 0,
+      "group": 21
+    },
+    {
+      "m": "watched a bizarre local TV channel out of curiosity",
+      "f": "watched a bizarre local TV channel out of curiosity",
+      "variant": 0,
+      "group": 22
+    },
+    {
+      "m": "fell asleep in front of a hotel TV and woke to commercials",
+      "f": "fell asleep in front of a hotel TV and woke to commercials",
+      "variant": 0,
+      "group": 23
+    },
+    {
+      "m": "chose a hotel room mainly for the bathtub",
+      "f": "chose a hotel room mainly for the bathtub",
+      "variant": 0,
+      "group": 24
+    },
+    {
+      "m": "booked accommodation from misleading photos",
+      "f": "booked accommodation from misleading photos",
+      "variant": 0,
+      "group": 25
+    },
+    {
+      "m": "arrived at a rental that looked far bigger in photos",
+      "f": "arrived at a rental that looked far bigger in photos",
+      "variant": 0,
+      "group": 26
+    },
+    {
+      "m": "discovered a promised amenity was missing from a rental",
+      "f": "discovered a promised amenity was missing from a rental",
+      "variant": 0,
+      "group": 27
+    },
+    {
+      "m": "argued with a rental host over the security deposit",
+      "f": "argued with a rental host over the security deposit",
+      "variant": 0,
+      "group": 28
+    },
+    {
+      "m": "asked for a discount after check-in over a minor issue",
+      "f": "asked for a discount after check-in over a minor issue",
+      "variant": 0,
+      "group": 29
+    },
+    {
+      "m": "got lost in complicated self-check-in instructions",
+      "f": "got lost in complicated self-check-in instructions",
+      "variant": 0,
+      "group": 30
+    },
+    {
+      "m": "spent half an hour looking for a hidden lockbox",
+      "f": "spent half an hour looking for a hidden lockbox",
+      "variant": 0,
+      "group": 31
+    },
+    {
+      "m": "entered the wrong door code repeatedly",
+      "f": "entered the wrong door code repeatedly",
+      "variant": 0,
+      "group": 32
+    },
+    {
+      "m": "called a rental host at night because I couldn't open the lock",
+      "f": "called a rental host at night because I couldn't open the lock",
+      "variant": 0,
+      "group": 33
+    },
+    {
+      "m": "mixed up the Wi-Fi password and the door code",
+      "f": "mixed up the Wi-Fi password and the door code",
+      "variant": 0,
+      "group": 34
+    },
+    {
+      "m": "searched every drawer in a rental for the Wi-Fi password",
+      "f": "searched every drawer in a rental for the Wi-Fi password",
+      "variant": 0,
+      "group": 35
+    },
+    {
+      "m": "left a negative accommodation review because of noise",
+      "f": "left a negative accommodation review because of noise",
+      "variant": 0,
+      "group": 36
+    },
+    {
+      "m": "sent a host an excessively long message about minor things",
+      "f": "sent a host an excessively long message about minor things",
+      "variant": 0,
+      "group": 37
+    },
+    {
+      "m": "met hotel neighbors in the elevator looking ridiculous",
+      "f": "met hotel neighbors in the elevator looking ridiculous",
+      "variant": 0,
+      "group": 38
+    },
+    {
+      "m": "opened the wrong door and ended up in a strange corridor",
+      "f": "opened the wrong door and ended up in a strange corridor",
+      "variant": 0,
+      "group": 39
+    },
+    {
+      "m": "got lost walking from the pool back to my room",
+      "f": "got lost walking from the pool back to my room",
+      "variant": 0,
+      "group": 40
+    },
+    {
+      "m": "wandered around a hotel looking for breakfast",
+      "f": "wandered around a hotel looking for breakfast",
+      "variant": 0,
+      "group": 41
+    },
+    {
+      "m": "arrived at the hotel breakfast buffet one minute before closing",
+      "f": "arrived at the hotel breakfast buffet one minute before closing",
+      "variant": 0,
+      "group": 42
+    },
+    {
+      "m": "loaded my breakfast plate with far too much food",
+      "f": "loaded my breakfast plate with far too much food",
+      "variant": 0,
+      "group": 43
+    },
+    {
+      "m": "took an apple from hotel breakfast for later",
+      "f": "took an apple from hotel breakfast for later",
+      "variant": 0,
+      "group": 44
+    },
+    {
+      "m": "mixed up breakfast hours with checkout time",
+      "f": "mixed up breakfast hours with checkout time",
+      "variant": 0,
+      "group": 45
+    },
+    {
+      "m": "missed hotel breakfast because I slept through my alarm",
+      "f": "missed hotel breakfast because I slept through my alarm",
+      "variant": 0,
+      "group": 46
+    },
+    {
+      "m": "asked for late checkout just to sleep another half hour",
+      "f": "asked for late checkout just to sleep another half hour",
+      "variant": 0,
+      "group": 47
+    },
+    {
+      "m": "hid dirty dishes before hotel housekeeping arrived",
+      "f": "hid dirty dishes before hotel housekeeping arrived",
+      "variant": 0,
+      "group": 48
+    },
+    {
+      "m": "tidied my hotel room before housekeeping came",
+      "f": "tidied my hotel room before housekeeping came",
+      "variant": 0,
+      "group": 49
+    },
+    {
+      "m": "tried talking to hotel housekeeping without sharing a language",
+      "f": "tried talking to hotel housekeeping without sharing a language",
+      "variant": 0,
+      "group": 50
+    },
+    {
+      "m": "apologized to hotel staff for the mess in my room",
+      "f": "apologized to hotel staff for the mess in my room",
+      "variant": 0,
+      "group": 51
+    },
+    {
+      "m": "mixed up the Clean My Room and Do Not Disturb signs",
+      "f": "mixed up the Clean My Room and Do Not Disturb signs",
+      "variant": 0,
+      "group": 52
+    },
+    {
+      "m": "left something important behind in a hotel room",
+      "f": "left something important behind in a hotel room",
+      "variant": 0,
+      "group": 53
+    },
+    {
+      "m": "checked a hotel room before leaving and still forgot something",
+      "f": "checked a hotel room before leaving and still forgot something",
+      "variant": 0,
+      "group": 54
+    },
+    {
+      "m": "went back to reception to retrieve a phone charger",
+      "f": "went back to reception to retrieve a phone charger",
+      "variant": 0,
+      "group": 55
+    },
+    {
+      "m": "mixed up my belongings with my roommate's things",
+      "f": "mixed up my belongings with my roommate's things",
+      "variant": 0,
+      "group": 56
+    },
+    {
+      "m": "shared a room with someone who snored loudly",
+      "f": "shared a room with someone who snored loudly",
+      "variant": 0,
+      "group": 57
+    },
+    {
+      "m": "slept on an uncomfortable sofa despite a spare bed being available",
+      "f": "slept on an uncomfortable sofa despite a spare bed being available",
+      "variant": 0,
+      "group": 58
+    },
+    {
+      "m": "argued about who would sleep by the window",
+      "f": "argued about who would sleep by the window",
+      "variant": 0,
+      "group": 59
+    },
+    {
+      "m": "heard far too much through thin hotel walls",
+      "f": "heard far too much through thin hotel walls",
+      "variant": 0,
+      "group": 60
+    },
+    {
+      "m": "pretended I couldn't hear the guests next door",
+      "f": "pretended I couldn't hear the guests next door",
+      "variant": 0,
+      "group": 61
+    },
+    {
+      "m": "suspected the room next door was throwing a party",
+      "f": "suspected the room next door was throwing a party",
+      "variant": 0,
+      "group": 62
+    },
+    {
+      "m": "accidentally connected to a stranger's Bluetooth speaker in a rental",
+      "f": "accidentally connected to a stranger's Bluetooth speaker in a rental",
+      "variant": 0,
+      "group": 63
+    },
+    {
+      "m": "searched for a power outlet in the most ridiculous place",
+      "f": "searched for a power outlet in the most ridiculous place",
+      "variant": 0,
+      "group": 64
+    },
+    {
+      "m": "moved furniture around just to charge my phone",
+      "f": "moved furniture around just to charge my phone",
+      "variant": 0,
+      "group": 65
+    },
+    {
+      "m": "forgot a travel plug adapter abroad",
+      "f": "forgot a travel plug adapter abroad",
+      "variant": 0,
+      "group": 66
+    },
+    {
+      "m": "turned on the air conditioning and immediately regretted the cold",
+      "f": "turned on the air conditioning and immediately regretted the cold",
+      "variant": 0,
+      "group": 67
+    },
+    {
+      "m": "slept with the window open and woke up to street noise",
+      "f": "slept with the window open and woke up to street noise",
+      "variant": 0,
+      "group": 68
+    },
+    {
+      "m": "closed the curtains to sleep in the middle of the day",
+      "f": "closed the curtains to sleep in the middle of the day",
+      "variant": 0,
+      "group": 69
+    },
+    {
+      "m": "watched a hotel sunrise after not sleeping all night",
+      "f": "watched a hotel sunrise after not sleeping all night",
+      "variant": 0,
+      "group": 70
+    },
+    {
+      "m": "took far too many photos of the view from my room",
+      "f": "took far too many photos of the view from my room",
+      "variant": 0,
+      "group": 71
+    },
+    {
+      "m": "was disappointed when my hotel room overlooked a wall",
+      "f": "was disappointed when my hotel room overlooked a wall",
+      "variant": 0,
+      "group": 72
+    },
+    {
+      "m": "asked to change hotel rooms just for a better view",
+      "f": "asked to change hotel rooms just for a better view",
+      "variant": 0,
+      "group": 73
+    },
+    {
+      "m": "got confused by different floor numbering in a hotel",
+      "f": "got confused by different floor numbering in a hotel",
+      "variant": 0,
+      "group": 74
+    },
+    {
+      "m": "got stuck in a hotel elevator for a few minutes",
+      "f": "got stuck in a hotel elevator for a few minutes",
+      "variant": 0,
+      "group": 75
+    },
+    {
+      "m": "rode the hotel elevator up and down after forgetting my floor",
+      "f": "rode the hotel elevator up and down after forgetting my floor",
+      "variant": 0,
+      "group": 76
+    },
+    {
+      "m": "accidentally entered a staff-only area of a hotel",
+      "f": "accidentally entered a staff-only area of a hotel",
+      "variant": 0,
+      "group": 77
+    },
+    {
+      "m": "tried to enter a hotel pool after closing time",
+      "f": "tried to enter a hotel pool after closing time",
+      "variant": 0,
+      "group": 78
+    },
+    {
+      "m": "discovered I'd booked a place far outside the city center",
+      "f": "discovered I'd booked a place far outside the city center",
+      "variant": 0,
+      "group": 79
+    },
+    {
+      "m": "booked cheap accommodation and spent more on transport",
+      "f": "booked cheap accommodation and spent more on transport",
+      "variant": 0,
+      "group": 80
+    },
+    {
+      "m": "moved to another hotel room in the middle of a trip",
+      "f": "moved to another hotel room in the middle of a trip",
+      "variant": 0,
+      "group": 81
+    },
+    {
+      "m": "met interesting people in a hostel's shared kitchen",
+      "f": "met interesting people in a hostel's shared kitchen",
+      "variant": 0,
+      "group": 82
+    },
+    {
+      "m": "cooked dinner in someone else's tiny rental kitchen",
+      "f": "cooked dinner in someone else's tiny rental kitchen",
+      "variant": 0,
+      "group": 83
+    },
+    {
+      "m": "nearly broke a kitchen appliance while figuring out its instructions",
+      "f": "nearly broke a kitchen appliance while figuring out its instructions",
+      "variant": 0,
+      "group": 84
+    },
+    {
+      "m": "spilled a drink on a sofa in a rental apartment",
+      "f": "spilled a drink on a sofa in a rental apartment",
+      "variant": 0,
+      "group": 85
+    },
+    {
+      "m": "photographed every scratch in a rental upon arrival",
+      "f": "photographed every scratch in a rental upon arrival",
+      "variant": 0,
+      "group": 86
+    },
+    {
+      "m": "returned rental keys later than agreed",
+      "f": "returned rental keys later than agreed",
+      "variant": 0,
+      "group": 87
+    },
+    {
+      "m": "left a thank-you note for an accommodation host",
+      "f": "left a thank-you note for an accommodation host",
+      "variant": 0,
+      "group": 88
+    },
+    {
+      "m": "argued with friends over where to stay",
+      "f": "argued with friends over where to stay",
+      "variant": 0,
+      "group": 89
+    },
+    {
+      "m": "chose accommodation based on having a big living room",
+      "f": "chose accommodation based on having a big living room",
+      "variant": 0,
+      "group": 90
+    },
+    {
+      "m": "pretended not to hear my roommate's alarm",
+      "f": "pretended not to hear my roommate's alarm",
+      "variant": 0,
+      "group": 91
+    },
+    {
+      "m": "bought food for a shared kitchen and found it missing",
+      "f": "bought food for a shared kitchen and found it missing",
+      "variant": 0,
+      "group": 92
+    },
+    {
+      "m": "mistook someone else's food in a shared fridge for mine",
+      "f": "mistook someone else's food in a shared fridge for mine",
+      "variant": 0,
+      "group": 93
+    },
+    {
+      "m": "hid my favorite snacks from my roommates",
+      "f": "hid my favorite snacks from my roommates",
+      "variant": 0,
+      "group": 94
+    },
+    {
+      "m": "negotiated over who got the only blanket",
+      "f": "negotiated over who got the only blanket",
+      "variant": 0,
+      "group": 95
+    },
+    {
+      "m": "slept on the floor so a friend could have the better spot",
+      "f": "slept on the floor so a friend could have the better spot",
+      "variant": 0,
+      "group": 96
+    },
+    {
+      "m": "left an unexpectedly glowing but honest accommodation review",
+      "f": "left an unexpectedly glowing but honest accommodation review",
+      "variant": 0,
+      "group": 97
+    },
+    {
+      "m": "declined hotel housekeeping for one more hour of sleep",
+      "f": "declined hotel housekeeping for one more hour of sleep",
+      "variant": 0,
+      "group": 98
+    },
+    {
+      "m": "accidentally ordered food delivery to the wrong hotel",
+      "f": "accidentally ordered food delivery to the wrong hotel",
+      "variant": 0,
+      "group": 99
+    }
   ]
 }
