@@ -60,253 +60,38 @@ function applySettings(s){$('quick').classList.toggle('active',['quick','challen
 function getSettings(){return {mode:$('custom').classList.contains('active')?'custom':$('challenge').classList.contains('active')?'challenge':$('endless').classList.contains('active')?'endless':'quick',total:Math.max(1,Math.min(10000,Number($('total').value)||20)),extreme:$('extreme').checked,topics:[...$('topics').querySelectorAll('input:checked')].map(x=>x.value),events:$('events').checked,rate:Number($('rate').value)/100,party_level:Number($('partyLevel').value),language:$('roomLanguage').value}}
 async function saveSettings(){if(!admin||!state||state.phase!=='lobby')return;let s=getSettings();if(s.mode!=='custom'&&!s.extreme&&!s.topics.length){alertMessage('Выбери хотя бы одну тему или включи жёсткий режим.');return}await act('settings',{settings:s})}
 function showPlayers(list){$('players').replaceChildren();for(let p of list){let box=document.createElement('div');box.className='player';box.textContent=(p.gender==='female'?'👩 ':'👨 ')+p.name;let sm=document.createElement('small');sm.textContent=t('В комнате');box.append(sm);if(admin){let b=document.createElement('button');b.textContent=t('Убрать');b.onclick=()=>act('kick',{id:p.id});box.append(b)}$('players').append(box)}}
-function render(s) {
-    let prior = state;
-    state = s;
-
-    if (!s || !s.phase) return;
-
-    updateCustomVisibility(s);
-    updateTimer(s);
-
-    if (s.me && s.phase === 'playing') {
-        award('first_game', 'Первая игра');
-    }
-
-    if (s.index >= 10) {
-        award('ten_cards', '10 карточек за партию');
-    }
-
-    if (admin) {
-        $('adminSummary').textContent =
-            (language === 'en' ? 'Players: ' : 'Игроков: ') +
-            s.players.map(p => p.name).join(', ') +
-            ' · ' + s.players.length + '/16';
-
-        $('hostOnly').classList.toggle('hidden', s.phase !== 'lobby');
-        $('adminLive').classList.toggle('hidden', s.phase !== 'playing');
-        $('adminReset').classList.toggle('hidden', s.phase !== 'ended');
-
-        if (s.phase === 'playing') {
-            $('adminCurrent').textContent = s.current?.text || '';
-        }
-
-        if (hostTab === 'manage') {
-            view('adminPanel');
-
-            if (s.phase === 'lobby') {
-                $('joinLink').textContent = s.address;
-                $('joinLink').href = s.address;
-
-                let qr = $('joinQr');
-
-                if (qr) {
-                    let src = '/qr.svg?ip=' + encodeURIComponent(s.address);
-
-                    if (qr.getAttribute('src') !== src) {
-                        qr.setAttribute('src', src);
-                    }
-                }
-
-                $('start').disabled = s.players.length < 1;
-
-                const hash = JSON.stringify(s.settings);
-
-                if (settingsHash !== hash) {
-                    settingsHash = hash;
-                    applySettings(s.settings);
-                    topicRender(s.topics);
-                }
-            }
-
-            return;
-        }
-    }
-
-    if (prior && prior.phase === 'lobby' && s.phase === 'playing') {
-        playSound('start');
-    }
-
-    if (s.effect && s.effect.revision !== lastEffect) {
-        lastEffect = s.effect.revision;
-
-        if (prior && prior.phase === 'playing' && !s.current?.event) {
-            cardFx(s.effect.kind);
-        }
-    }
-
-    if (s.phase === 'playing' && s.current?.event) {
-        let key = String(s.index) + '|' + String(s.current.title);
-
-        if (key !== lastEventKey) {
-            lastEventKey = key;
-
-            if (prior) {
-                cardFx(eventSound(s.current));
-            }
-        }
-    } else if (s.phase !== 'playing') {
-        lastEventKey = '';
-    }
-
-    if (s.phase === 'lobby') {
-        if (!admin && !s.me) {
-            view('joinPanel');
-            return;
-        }
-
-        view('lobbyPanel');
-
-        $('hostJoin').classList.toggle('hidden', !admin);
-
-        if (admin) {
-            $('hostJoinForm').classList.toggle('hidden', !!s.me);
-            $('hostJoined').classList.toggle('hidden', !s.me);
-        }
-
-        showPlayers(s.players);
-
-        $('lobbyTitle').textContent =
-            language === 'en'
-                ? `${s.players.length} / 16 players in room`
-                : `${s.players.length} из 16 игроков в комнате`;
-
-        $('guestLobby').classList.toggle('hidden', admin);
-
-        if (admin) {
-            $('joinLink').textContent = s.address;
-            $('joinLink').href = s.address;
-
-            let qr = $('joinQr');
-
-            if (qr) {
-                let src = '/qr.svg?ip=' + encodeURIComponent(s.address);
-
-                if (qr.getAttribute('src') !== src) {
-                    qr.setAttribute('src', src);
-                }
-            }
-
-            $('start').disabled = s.players.length < 1;
-
-            const hash = JSON.stringify(s.settings);
-
-            if (settingsHash !== hash) {
-                settingsHash = hash;
-                applySettings(s.settings);
-                topicRender(s.topics);
-            }
-        }
-
-    } else if (s.phase === 'playing') {
-        if (!admin && !s.me) {
-            view('joinPanel');
-
-            alertMessage(
-                'Партия уже началась. Подключиться может участник, который входил ранее с этого телефона.'
-            );
-
-            return;
-        }
-
-        view('gamePanel');
-
-        $('gamePanel').classList.toggle(
-            'extremeCard',
-            s.settings.extreme
-        );
-
-        $('gamePanel').classList.toggle(
-            'bearCard',
-            !!s.current?.bear
-        );
-
-        let c = s.current;
-        let reader = s.players.find(p => p.id === s.reader);
-        let isReader = s.me === s.reader;
-
-        $('readerName').textContent = reader ? reader.name : '—';
-
-        // ИСПРАВЛЕНО:
-        // Используем s.settings.mode и корректно проверяем режимы.
-        const isLimitedMode = ['quick', 'challenge'].includes(
-            s.settings.mode
-        );
-
-        $('counter').textContent = isLimitedMode
-            ? (
-                language === 'en'
-                    ? `Card ${s.index + 1} / ${s.settings.total}`
-                    : `Карточка ${s.index + 1} / ${s.settings.total}`
-            )
-            : (
-                language === 'en'
-                    ? `♾️ Card ${s.index + 1}`
-                    : `♾️ Карточка ${s.index + 1}`
-            );
-
-        $('progress').classList.toggle(
-            'hidden',
-            ['endless', 'custom'].includes(s.settings.mode)
-        );
-
-        $('progressFill').style.width =
-            (100 * s.index / s.settings.total) + '%';
-
-        $('topic').textContent = t(c?.topic || '');
-        $('cardTitle').textContent = c?.title || '';
-        $('question').textContent = c?.text || '';
-
-        $('readerActions').classList.toggle(
-            'hidden',
-            s.settings.mode === 'challenge' ||
-            !isReader ||
-            !!c?.event
-        );
-
-        $('challengeActions').classList.toggle(
-            'hidden',
-            s.settings.mode !== 'challenge' || !s.me
-        );
-
-        if (s.settings.mode === 'challenge') {
-            $('challengeYes').disabled =
-                !!s.my_challenge_vote ||
-                Date.now() / 1000 >= (s.challenge_deadline || 0);
-
-            $('challengeNo').disabled = $('challengeYes').disabled;
-
-            $('challengeInfo').textContent =
-                Object.keys(s.challenge_votes || {}).length +
-                '/' + s.players.length +
-                ' ответили (после 5 секунд молчание считается «Было»)';
-        }
-
-        $('eventActions').classList.toggle(
-            'hidden',
-            !isReader || !c?.event
-        );
-
-        $('adminActions').classList.toggle('hidden', !admin);
-
-        $('whoCanAct').textContent = t(
-            isReader
-                ? 'Прочитай вопрос, дай всем ответить и переходи дальше.'
-                : 'Отвечают все вслух или жестом. Переключает карточку читающий.'
-        );
-
-    } else if (s.phase === 'ended') {
-        view('endPanel');
-
-        $('endText').textContent =
-            language === 'en'
-                ? `You played ${s.index} cards. Thanks for joining!`
-                : `Вы посмотрели ${s.index} карточек. Спасибо за игру!`;
-
-        $('reset').classList.toggle('hidden', !admin);
-        $('guestEnd').classList.toggle('hidden', admin);
-    }
-}$('joinForm').onsubmit=async(e)=>{e.preventDefault();await act('join',{name:$('playerName').value,gender:$('playerGender').value})};
+function render(s){let prior=state;state=s;if(!s||!s.phase)return;updateCustomVisibility(s);updateTimer(s);if(s.me&&s.phase==='playing')award('first_game','Первая игра');if(s.index>=10)award('ten_cards','10 карточек за партию');
+ if(admin){$('adminSummary').textContent=(language==='en'?'Players: ':'Игроков: ')+s.players.map(p=>p.name).join(', ')+' · '+s.players.length+'/16';$('hostOnly').classList.toggle('hidden',s.phase!=='lobby');$('adminLive').classList.toggle('hidden',s.phase!=='playing');$('adminReset').classList.toggle('hidden',s.phase!=='ended');if(s.phase==='playing'){$('adminCurrent').textContent=s.current?.text||'';}if(hostTab==='manage'){view('adminPanel');if(s.phase==='lobby'){$('joinLink').textContent=s.address;$('joinLink').href=s.address;let qr=$('joinQr');if(qr){let src='/qr.svg?ip='+encodeURIComponent(s.address);if(qr.getAttribute('src')!==src)qr.setAttribute('src',src)}$('start').disabled=s.players.length<1;const hash=JSON.stringify(s.settings);if(settingsHash!==hash){settingsHash=hash;applySettings(s.settings);topicRender(s.topics)}}return;}}
+ if(prior&&prior.phase==='lobby'&&s.phase==='playing')playSound('start');
+ if(s.effect&&s.effect.revision!==lastEffect){lastEffect=s.effect.revision;if(prior&&prior.phase==='playing'&&!s.current?.event)cardFx(s.effect.kind)}
+ if(s.phase==='playing' && s.current?.event){
+  let key=String(s.index)+'|'+String(s.current.title);
+  if(key!==lastEventKey){lastEventKey=key;if(prior)cardFx(eventSound(s.current))}
+ }else if(s.phase!=='playing'){lastEventKey=''}
+ if(s.phase==='lobby'){
+  if(!admin&&!s.me){view('joinPanel');return}
+  view('lobbyPanel');$('hostJoin').classList.toggle('hidden',!admin);if(admin){$('hostJoinForm').classList.toggle('hidden',!!s.me);$('hostJoined').classList.toggle('hidden',!s.me)}showPlayers(s.players);$('lobbyTitle').textContent=language==='en'?`${s.players.length} / 16 players in room`:`${s.players.length} из 16 игроков в комнате`;$('guestLobby').classList.toggle('hidden',admin);
+  if(admin){$('joinLink').textContent=s.address;$('joinLink').href=s.address;let qr=$('joinQr');if(qr){let src='/qr.svg?ip='+encodeURIComponent(s.address);if(qr.getAttribute('src')!==src)qr.setAttribute('src',src)}$('start').disabled=s.players.length<1;
+   const hash=JSON.stringify(s.settings);if(settingsHash!==hash){settingsHash=hash;applySettings(s.settings);topicRender(s.topics)}}
+ }else if(s.phase==='playing'){
+  if(!admin&&!s.me){view('joinPanel');alertMessage('Партия уже началась. Подключиться может участник, который входил ранее с этого телефона.');return}
+  view('gamePanel');$('gamePanel').classList.toggle('extremeCard',s.settings.extreme);$('gamePanel').classList.toggle('bearCard',!!s.current?.bear);
+  let c=s.current,reader=s.players.find(p=>p.id===s.reader);let isReader=s.me===s.reader;
+  $('readerName').textContent=reader?reader.name:'—';$('counter').textContent=s.setting['quick','challenge'].includes(s.mode)?(language==='en'?`Card ${s.index+1} / ${s.settings.total}`:`Карточка ${s.index+1} / ${s.settings.total}`):(language==='en'?`♾️ Card ${s.index+1}`:`♾️ Карточка ${s.index+1}`);
+  $('progress').classList.toggle('hidden',['endless','custom'].includes(s.settings.mode));$('progressFill').style.width=(100*s.index/s.settings.total)+'%';
+  $('topic').textContent=t(c?.topic||'');
+  $('cardTitle').textContent=c?.title||'';
+  $('question').textContent=c?.text||'';
+  $('readerActions').classList.toggle('hidden',s.settings.mode==='challenge'||!isReader||!!c?.event);$('challengeActions').classList.toggle('hidden',s.settings.mode!=='challenge'||!s.me);if(s.settings.mode==='challenge'){$('challengeYes').disabled=!!s.my_challenge_vote||Date.now()/1000>=(s.challenge_deadline||0);$('challengeNo').disabled=$('challengeYes').disabled;$('challengeInfo').textContent=Object.keys(s.challenge_votes||{}).length+'/'+s.players.length+' ответили (после 5 секунд молчание считается «Было»)';}
+  $('eventActions').classList.toggle('hidden',!isReader||!c?.event);
+  $('adminActions').classList.toggle('hidden',!admin);
+  $('whoCanAct').textContent=t(isReader?'Прочитай вопрос, дай всем ответить и переходи дальше.':'Отвечают все вслух или жестом. Переключает карточку читающий.');
+ }else if(s.phase==='ended'){
+  view('endPanel');$('endText').textContent=language==='en'?`You played ${s.index} cards. Thanks for joining!`:`Вы посмотрели ${s.index} карточек. Спасибо за игру!`;
+  $('reset').classList.toggle('hidden',!admin);$('guestEnd').classList.toggle('hidden',admin);
+ }
+}
+$('joinForm').onsubmit=async(e)=>{e.preventDefault();await act('join',{name:$('playerName').value,gender:$('playerGender').value})};
 $('leave').onclick=async()=>{await act('leave');token='';localStorage.removeItem('party-v5-token')};
 function pickMode(mode){for(const id of ['quick','endless','challenge','custom'])$(id).classList.toggle('active',id===mode);$('totalBox').classList.toggle('hidden',mode==='endless'||mode==='custom');saveSettings();if(state)updateCustomVisibility(state)}
 $('challenge').onclick=()=>pickMode('challenge');$('custom').onclick=()=>pickMode('custom');
